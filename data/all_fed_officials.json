@@ -104,6 +104,20 @@
     "dateBasis": "美国当地日期"
   },
   {
+    "date": "2026-11-10",
+    "speaker": "Michelle Bowman",
+    "title": "The U.S. Economy and Considerations for Monetary Policy",
+    "url": "https://www.federalreserve.gov/newsevents/speech/bowman20261110a.htm",
+    "source": "Federal Reserve Board",
+    "kind": "正式演讲",
+    "stance": "未判定",
+    "summary": "已确认官网公开演讲；关键原句与鹰鸽判断待全文提取。",
+    "evidence": "",
+    "rateBp": "未核实",
+    "confidence": "联储官网已确认，政策判读待核验",
+    "dateBasis": "美国当地日期"
+  },
+  {
     "date": "2026-11-06",
     "speaker": "Alberto Musalem",
     "title": "Your Fed: Decentralized by Design",
@@ -210,6 +224,20 @@
     "dateBasis": "美国当地日期"
   },
   {
+    "date": "2026-10-01",
+    "speaker": "Philip Jefferson",
+    "title": "The U.S. Economy and Monetary Policy",
+    "url": "https://www.federalreserve.gov/newsevents/speech/jefferson20261001a.htm",
+    "source": "Federal Reserve Board",
+    "kind": "正式演讲",
+    "stance": "未判定",
+    "summary": "已确认官网公开演讲；关键原句与鹰鸽判断待全文提取。",
+    "evidence": "",
+    "rateBp": "未核实",
+    "confidence": "联储官网已确认，政策判读待核验",
+    "dateBasis": "美国当地日期"
+  },
+  {
     "date": "2026-09-29",
     "speaker": "Christopher Waller",
     "title": "AI智能体时代的支付",
@@ -221,6 +249,34 @@
     "evidence": "",
     "rateBp": "未核实",
     "confidence": "历史双人物看板记录，原文待复核",
+    "dateBasis": "美国当地日期"
+  },
+  {
+    "date": "2026-09-29",
+    "speaker": "Michael Barr",
+    "title": "Economic Conditions and Monetary Policy",
+    "url": "https://www.federalreserve.gov/newsevents/speech/barr20260929a.htm",
+    "source": "Federal Reserve Board",
+    "kind": "正式演讲",
+    "stance": "未判定",
+    "summary": "已确认官网公开演讲；关键原句与鹰鸽判断待全文提取。",
+    "evidence": "",
+    "rateBp": "未核实",
+    "confidence": "联储官网已确认，政策判读待核验",
+    "dateBasis": "美国当地日期"
+  },
+  {
+    "date": "2026-09-28",
+    "speaker": "Lisa Cook",
+    "title": "Update on AI and the Economy",
+    "url": "https://www.federalreserve.gov/newsevents/speech/cook20260928a.htm",
+    "source": "Federal Reserve Board",
+    "kind": "正式演讲",
+    "stance": "未判定",
+    "summary": "已确认官网公开演讲；关键原句与鹰鸽判断待全文提取。",
+    "evidence": "",
+    "rateBp": "未核实",
+    "confidence": "联储官网已确认，政策判读待核验",
     "dateBasis": "美国当地日期"
   },
   {
@@ -297,6 +353,20 @@
     "evidence": "",
     "rateBp": "未核实",
     "confidence": "历史双人物看板记录，原文待复核",
+    "dateBasis": "美国当地日期"
+  },
+  {
+    "date": "2026-09-01",
+    "speaker": "Michael Barr",
+    "title": "Economic Outlook and Financial Inclusion",
+    "url": "https://www.federalreserve.gov/newsevents/speech/barr20260901a.htm",
+    "source": "Federal Reserve Board",
+    "kind": "正式演讲",
+    "stance": "未判定",
+    "summary": "已确认官网公开演讲；关键原句与鹰鸽判断待全文提取。",
+    "evidence": "",
+    "rateBp": "未核实",
+    "confidence": "联储官网已确认，政策判读待核验",
     "dateBasis": "美国当地日期"
   }
 ]
