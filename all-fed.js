@@ -14,10 +14,15 @@
   }
   function summarize(){
     const latest = new Map();
+    const observed = new Set(all.map(v=>v.speaker));
+    const today = new Date();
+    const threshold = new Date(today.getTime()-45*86400000).toISOString().slice(0,10);
+    // Use the most recent EXPLICIT policy statement of each speaker, not a later non-policy speech.
     for(const v of all.slice().sort((a,b)=>b.date.localeCompare(a.date))){
+      if(v.date<threshold || !['hawk','dove','mixed'].includes(status(v)))continue;
       if(!latest.has(v.speaker))latest.set(v.speaker,v);
     }
-    const sample=[...latest.values()].filter(v=>['hawk','dove','mixed'].includes(status(v)));
+    const sample=[...latest.values()];
     const hawks=sample.filter(v=>status(v)==='hawk').length;
     const doves=sample.filter(v=>status(v)==='dove').length;
     const mixed=sample.filter(v=>status(v)==='mixed').length;
@@ -31,9 +36,9 @@
     $('all-fed-overall').textContent=view;
     $('all-fed-counts').innerHTML=[
       ['偏鹰',hawks,'hawk'],['偏鸽',doves,'dove'],
-      ['混合',mixed,'mixed'],['无明确分类',latest.size-sample.length,'unknown']
+      ['混合',mixed,'mixed'],['无明确分类',observed.size-sample.length,'unknown']
     ].map(x=>'<span class="fed-pill '+x[2]+'">'+x[0]+' '+x[1]+'</span>').join('');
-    $('all-fed-scope').textContent='2026-09-01起｜收录 '+all.length+' 项官方来源记录；已覆盖 '+latest.size+'/'+people.length+' 位预设跟踪对象；有明确规则初判 '+sample.length+' 人。各人的最新一条记录不一定讨论货币政策。';
+    $('all-fed-scope').textContent='2026-09-01起｜收录 '+all.length+' 项官方来源记录；已覆盖 '+observed.size+'/'+people.length+' 位预设跟踪对象；近45天有明确规则初判 '+sample.length+' 人。其余不计入偏鹰偏鸽。';
   }
   function render(){
     summarize();
