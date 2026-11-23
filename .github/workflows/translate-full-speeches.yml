@@ -1,0 +1,56 @@
+name: Translate Fed Official Speeches to Chinese
+
+on:
+  workflow_dispatch:
+    inputs:
+      speech_url:
+        description: 'Optional official Fed speech URL; leave empty to translate next unprocessed historical speech'
+        required: false
+        type: string
+  schedule:
+    # 北京时间08:20，每天最多翻译一篇官方书面演讲
+    - cron: '20 0 * * *'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/translate-full-speeches.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fed-translation
+  cancel-in-progress: false
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: python -m pip install 'beautifulsoup4>=4.12,<5'
+
+      - name: Translate one official speech
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: gpt-4.1-mini
+          TRANSLATE_URL: ${{ inputs.speech_url || '' }}
+          TRANSLATE_MAX_PARAGRAPHS: '60'
+        run: python scripts/translate_official.py
+
+      - name: Commit full Chinese transcript if created
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/translations.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Add checked paragraph-complete Chinese transcript"
+            git push
+          fi
