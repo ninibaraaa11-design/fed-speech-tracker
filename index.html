@@ -7,50 +7,7 @@ for(const key of ['type','topic']){let items=[...new Set(DATA.map(x=>x[key]))].s
 function scope(){return DATA.filter(x=>person==='All'||x.person===person)}function filtered(){const q=$('q').value.trim().toLowerCase();return scope().filter(x=>(!q||[x.person,x.title,x.venue,x.summary,x.change,x.topic,x.rateNote,x.rateBp,x.date].join(' ').toLowerCase().includes(q))&&($('phase').value==='all'||x.phase===$('phase').value)&&($('type').value==='all'||x.type===$('type').value)&&($('topic').value==='all'||x.topic===$('topic').value)&&($('onlybp').value==='all'||($('onlybp').value==='personal'&&x.kind==='本人表态')||($('onlybp').value==='fomc'&&x.kind.startsWith('FOMC'))||($('onlybp').value==='unclear'&&!['本人表态','FOMC实际决议≠本人预告'].includes(x.kind)))).sort((a,b)=>$('order').value==='desc'?b.date.localeCompare(a.date):a.date.localeCompare(b.date))}
 function openItem(uid){selected=uid;render();document.querySelector('.grid').scrollIntoView({behavior:'smooth',block:'start'})}
 function render(){const base=scope(),rows=filtered();$('total').textContent=base.length;$('official').textContent=base.filter(x=>x.official).length;$('direct').textContent=base.filter(x=>x.kind==='本人表态').length;$('latest').textContent=base.reduce((m,x)=>x.date>m?x.date:m,'');$('count').textContent='（'+rows.length+'）';$('timeline').innerHTML=rows.length?rows.map(x=>`<button class="item ${selected===x.uid?'active':''}" data-uid="${x.uid}"><small>${x.date} · ${x.person==='Warsh'?'沃什':'沃勒'} · ${esc(x.phase)}</small><strong>${esc(x.title)}</strong><span class="tag">${esc(x.type)}</span><span class="tag">${esc(x.delta)}</span><small>${esc(x.venue)}</small><div style="color:var(--blue);font-weight:700">${esc(x.rateDirection)} · ${esc(x.rateBp)}</div></button>`).join(''):'<div class="empty">无符合条件的结果</div>';document.querySelectorAll('.item').forEach(e=>e.onclick=()=>{selected=e.dataset.uid;render()});let item=rows.find(x=>x.uid===selected)||rows[0];if(item){selected=item.uid;detail(item)}else $('detail').innerHTML='<div class="empty">请调整筛选条件</div>';let bands=[...base].sort((a,b)=>a.date.localeCompare(b.date));$('bands').innerHTML=bands.map(x=>`<button data-uid="${x.uid}" title="${esc(x.date+' '+x.title)}" style="background:${col(x.stance)}"></button>`).join('');document.querySelectorAll('#bands button').forEach(e=>e.onclick=()=>{selected=e.dataset.uid;let x=DATA.find(y=>y.uid===selected);if(x){$('q').value='';$('phase').value='all';$('topic').value='all';$('type').value='all';$('onlybp').value='all';render();document.querySelector('.grid').scrollIntoView({behavior:'smooth'})}});let ix=[...base].filter(x=>x.kind==='本人表态'||x.kind.startsWith('FOMC')).sort((a,b)=>b.date.localeCompare(a.date));$('index').innerHTML=ix.map(x=>`<tr data-uid="${x.uid}"><td>${x.date}</td><td>${x.person==='Warsh'?'沃什':'沃勒'}</td><td>${esc(x.title)}</td><td><b>${esc(x.rateBp)}</b></td><td>${esc(x.kind)}</td></tr>`).join('')||'<tr><td colspan="5">暂无核实的明确幅度</td></tr>';document.querySelectorAll('#index tr[data-uid]').forEach(e=>e.onclick=()=>{let x=DATA.find(y=>y.uid===e.dataset.uid);if(x&&person!=='All'&&x.person!==person){person=x.person;document.querySelectorAll('.tab').forEach(b=>b.classList.toggle('active',b.dataset.person===person))}selected=e.dataset.uid;for(let key of ['q'])$(key).value='';for(let key of ['phase','type','topic','onlybp'])$(key).value='all';openItem(selected)})}
-function detail(x){const src=esc(x.url);$('detail').innerHTML=`<div class="muted">${x.date} · ${x.person==='Warsh'?'Kevin Warsh / 沃什':'Christopher Waller / 沃勒'} · ${esc(x.phase)} · ${esc(x.type)}</div><h2>${esc(x.title)}</h2><p class="muted">${esc(x.venue)}</p><div class="rate"><b>本次加息 / 降息观点（独立追踪）</b><div class="metric"><span>${esc(x.rateDirection)}</span><span class="bp">${esc(x.rateBp)}</span></div><p><b>针对会议：</b>${esc(x.rateMeeting)}<br><b>具体表述：</b>${esc(x.rateNote)}<br><b>证据属性：</b>${esc(x.kind)}</p><div class="evidence">${esc(x.rateProof)}</div></div><div class="block"><b>发言要点 · 分主题详细版</b><p class="muted">以下为对现有可核验材料的中文研究归纳，并非逐字原文。</p><div class="points">${(x.details||[]).map((p,i)=>`<div class="point"><span class="pointlabel">${i+1}. ${esc(p.tag)}</span><span>${esc(p.text)}</span></div>`).join('')}</div></div><div class="block ai"><b>AI观点专项</b><span class="tag">${esc(x.aiStatus)}</span><p>${esc(x.aiDetail)}</p></div><div class="block warn"><b>与前次可比发言的变化：${esc(x.delta)}</b><p>${esc(x.change)}</p></div><div><span class="tag">主题：${esc(x.topic)}</span><span class="tag">立场：${esc(x.stance)}</span></div>${x.other?`<p class="muted">${esc(x.other)}</p>`:''}<p class="muted"><b>资料完整性：</b>${esc(x.full)}</p><a class="button" href="${src}" target="_blank" rel="noopener noreferrer">打开官方原文 / 媒体来源 ↗</a>${x.official?'<button class="button secondary" id="embed">看板内阅读中文全文</button>':''}<button class="button secondary" id="copy">复制研究卡片</button><div id="frame"></div><p class="evidence">注：这是中文研究摘录，不是完整逐字中文译文；未核实事项不可当作确定表述。</p>`;if($('embed'))$('embed').onclick=async()=>{
-  const pane=$('frame');
-  pane.replaceChildren();
-  const msg=document.createElement('p');
-  msg.className='muted';
-  msg.textContent='正在载入中文演讲稿…';
-  pane.append(msg);
-  try {
-    const response=await fetch('data/translations.json?v='+Date.now(),{cache:'no-store'});
-    if(!response.ok) throw new Error('暂无译稿数据库');
-    const all=await response.json();
-    const record=all[x.url];
-    pane.replaceChildren();
-    if(!record||!Array.isArray(record.paragraphs)||record.paragraphs.length!==record.paragraphCount){
-      const note=document.createElement('p');
-      note.className='muted';
-      note.textContent='这场演讲的中文全文还未完成翻译或核验。请先通过上方链接阅读英文原文；系统不会用摘要冒充全文。';
-      pane.append(note);
-      return;
-    }
-    const area=document.createElement('article');
-    area.style.cssText='background:#fff;border:1px solid #dce4ed;border-radius:12px;padding:22px;margin-top:16px;max-height:75vh;overflow-y:auto;line-height:1.9';
-    const head=document.createElement('h3');
-    head.textContent='中文完整演讲稿｜'+record.title;
-    area.append(head);
-    const status=document.createElement('p');
-    status.className='muted';
-    status.textContent=record.status+' · 全部 '+record.paragraphCount+' 段 · '+record.translatedAtUTC;
-    area.append(status);
-    for(const p of record.paragraphs){
-      const el=document.createElement(p.kind==='h1'||p.kind==='h2'||p.kind==='h3'?'h4':'p');
-      el.textContent=p.zh;
-      el.style.whiteSpace='pre-wrap';
-      area.append(el);
-    }
-    pane.append(area);
-    const small=document.createElement('p');
-    small.className='muted';
-    small.textContent='中文为机器译文，非美联储官方版本；引用数字与政策措辞请以英文原文为准。';
-    pane.append(small);
-  } catch(e) {
-    msg.textContent='中文译稿暂时不可读取。请点击上方官方原文链接。';
-  }
-};$('copy').onclick=()=>{let t=`${x.date} ${x.person} ${x.title}
+function detail(x){const src=esc(x.url);$('detail').innerHTML=`<div class="muted">${x.date} · ${x.person==='Warsh'?'Kevin Warsh / 沃什':'Christopher Waller / 沃勒'} · ${esc(x.phase)} · ${esc(x.type)}</div><h2>${esc(x.title)}</h2><p class="muted">${esc(x.venue)}</p><div class="rate"><b>本次加息 / 降息观点（独立追踪）</b><div class="metric"><span>${esc(x.rateDirection)}</span><span class="bp">${esc(x.rateBp)}</span></div><p><b>针对会议：</b>${esc(x.rateMeeting)}<br><b>具体表述：</b>${esc(x.rateNote)}<br><b>证据属性：</b>${esc(x.kind)}</p><div class="evidence">${esc(x.rateProof)}</div></div><div class="block"><b>发言要点 · 分主题详细版</b><p class="muted">以下为对现有可核验材料的中文研究归纳，并非逐字原文。</p><div class="points">${(x.details||[]).map((p,i)=>`<div class="point"><span class="pointlabel">${i+1}. ${esc(p.tag)}</span><span>${esc(p.text)}</span></div>`).join('')}</div></div><div class="block ai"><b>AI观点专项</b><span class="tag">${esc(x.aiStatus)}</span><p>${esc(x.aiDetail)}</p></div><div class="block warn"><b>与前次可比发言的变化：${esc(x.delta)}</b><p>${esc(x.change)}</p></div><div><span class="tag">主题：${esc(x.topic)}</span><span class="tag">立场：${esc(x.stance)}</span></div>${x.other?`<p class="muted">${esc(x.other)}</p>`:''}<p class="muted"><b>资料完整性：</b>${esc(x.full)}</p><a class="button" href="${src}" target="_blank" rel="noopener noreferrer">打开官方原文 / 媒体来源 ↗</a>${x.official?'<button class="button secondary" id="embed">看板内尝试阅读</button>':''}<button class="button secondary" id="copy">复制研究卡片</button><div id="frame"></div><p class="evidence">注：这是中文研究摘录，不是完整逐字中文译文；未核实事项不可当作确定表述。</p>`;if($('embed'))$('embed').onclick=()=>{$('frame').innerHTML=`<p class="muted">若官方站点拒绝嵌入，请使用上方独立网页链接。</p><iframe title="原文网页" src="${src}" loading="lazy" referrerpolicy="no-referrer"></iframe>`};$('copy').onclick=()=>{let t=`${x.date} ${x.person} ${x.title}
 场合：${x.venue}
 摘要：${x.summary}
 加息/降息：${x.rateDirection} ${x.rateBp}；${x.rateNote}
