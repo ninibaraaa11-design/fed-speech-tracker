@@ -151,7 +151,18 @@ evidence(2至4条，每条{claim,quote}，quote为本次原文中的精确英文
         raise ValueError("Unverifiable rate quote")
     return out
 
+def historical_baseline():
+    """Use original dashboard summaries as comparison context, not verified transcripts."""
+    try:
+        html = Path("index.html").read_text(encoding="utf-8")
+        raw = html.split("const DATA=", 1)[1]
+        parsed, _ = json.JSONDecoder().raw_decode(raw)
+        return parsed if isinstance(parsed, list) else []
+    except (OSError, ValueError, IndexError):
+        return []
+
 def analyze(rows):
+    baseline=historical_baseline()
     analyses=read_json(ANALYSIS,{})
     if not API_KEY:
         print("OPENAI_API_KEY not configured: skip AI analysis, no fabricated conclusions")
@@ -164,7 +175,17 @@ def analyze(rows):
             previous=[v for v in analyses.values() if v.get("person")==row["person"] and v.get("date","")<row["date"]]
             previous=sorted(previous,key=lambda p:p["date"])
             prior={"date":previous[-1]["date"],"summary":previous[-1]["summary"],
-                   "rateDirection":previous[-1]["rateDirection"],"aiDetail":previous[-1]["aiDetail"]} if previous else None
+                   "rateDirection":previous[-1]["rateDirection"],"aiDetail":previous[-1]["aiDetail"],
+                   "confidence":"AI-generated analysis, citation check"} if previous else None
+            if prior is None:
+                historical=[v for v in baseline if v.get("person")==row["person"] and v.get("date","")<row["date"]]
+                historical.sort(key=lambda v:v["date"])
+                if historical:
+                    v=historical[-1]
+                    prior={"date":v["date"],"summary":v.get("summary",""),
+                           "rateDirection":v.get("rateDirection",""),
+                           "aiDetail":v.get("aiDetail",""),
+                           "confidence":"历史看板研究摘要，尚未在本任务中逐字重新核对，比较需谨慎"}
             text=extract_official(row["url"])
             output=ask_ai(row,text,prior)
             analyses[row["url"]]=dict(output,person=row["person"],date=row["date"],
