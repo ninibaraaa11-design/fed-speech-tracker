@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-11-20",
+    "speaker": "Christopher Waller",
+    "title": "College Fed Challenge开幕致辞",
+    "url": "https://www.federalreserve.gov/newsevents/speech/waller20261120a.htm",
+    "source": "Federal Reserve Board",
+    "kind": "演讲",
+    "stance": "未判定",
+    "summary": "强调FOMC需依据证据形成决策，并向公众清晰解释政策判断与共识。",
+    "evidence": "",
+    "rateBp": "未核实",
+    "confidence": "历史双人物看板记录，原文待复核",
+    "dateBasis": "美国当地日期"
+  },
+  {
     "date": "2026-11-17",
     "speaker": "Beth Hammack",
     "title": "Lessons from a Burning River",
@@ -14,6 +28,34 @@
     "dateBasis": "美国当地日期",
     "reviewStatus": "原文访问失败",
     "reviewError": "Source domain not official"
+  },
+  {
+    "date": "2026-11-17",
+    "speaker": "Christopher Waller",
+    "title": "支付与代币化市场的交汇",
+    "url": "https://www.federalreserve.gov/newsevents/speech/waller20261117a.htm",
+    "source": "Federal Reserve Board",
+    "kind": "演讲",
+    "stance": "未判定",
+    "summary": "讨论代币化市场和支付基础设施的交互与金融结算安全。",
+    "evidence": "",
+    "rateBp": "未核实",
+    "confidence": "历史双人物看板记录，原文待复核",
+    "dateBasis": "美国当地日期"
+  },
+  {
+    "date": "2026-11-16",
+    "speaker": "Kevin Warsh",
+    "title": "生产率与就业工作组开幕讲话",
+    "url": "https://www.federalreserve.gov/newsevents/speech/warsh20261116a.htm",
+    "source": "Federal Reserve Board",
+    "kind": "演讲",
+    "stance": "未判定",
+    "summary": "强调超级智能（SI）可能成为影响增长、生产率、工作岗位的重大结构变化，推动央行研究长期潜在供给。",
+    "evidence": "",
+    "rateBp": "未核实",
+    "confidence": "历史双人物看板记录，原文待复核",
+    "dateBasis": "美国当地日期"
   },
   {
     "date": "2026-11-13",
@@ -48,6 +90,20 @@
     "reviewError": "Source domain not official"
   },
   {
+    "date": "2026-11-10",
+    "speaker": "Christopher Waller",
+    "title": "经济前景与劳动力市场活力",
+    "url": "https://www.federalreserve.gov/newsevents/speech/waller20261110a.htm",
+    "source": "Federal Reserve Board",
+    "kind": "演讲",
+    "stance": "未判定",
+    "summary": "讨论低招聘低裁员现象、就业市场活力与通胀；认为进一步货币紧缩应及早进行。",
+    "evidence": "",
+    "rateBp": "未核实",
+    "confidence": "历史双人物看板记录，原文待复核",
+    "dateBasis": "美国当地日期"
+  },
+  {
     "date": "2026-11-06",
     "speaker": "Alberto Musalem",
     "title": "Your Fed: Decentralized by Design",
@@ -80,6 +136,20 @@
     "reviewError": "Source domain not official"
   },
   {
+    "date": "2026-10-28",
+    "speaker": "Kevin Warsh",
+    "title": "10月FOMC新闻发布会",
+    "url": "https://www.federalreserve.gov/mediacenter/files/FOMCpresconf20261028.pdf",
+    "source": "Federal Reserve Board",
+    "kind": "记者会",
+    "stance": "未判定",
+    "summary": "当次维持利率目标区间3.75%—4.00%；进一步说明未来货币政策框架评估和央行决策纪律。",
+    "evidence": "",
+    "rateBp": "未核实",
+    "confidence": "历史双人物看板记录，原文待复核",
+    "dateBasis": "美国当地日期"
+  },
+  {
     "date": "2026-10-12",
     "speaker": "Beth Hammack",
     "title": "Trimming the Sails: Communicating My Reaction Function",
@@ -96,6 +166,20 @@
     "reviewError": "Source domain not official"
   },
   {
+    "date": "2026-10-08",
+    "speaker": "Christopher Waller",
+    "title": "经济预测摘要的信号价值",
+    "url": "https://www.federalreserve.gov/newsevents/speech/waller20261008a.htm",
+    "source": "Federal Reserve Board",
+    "kind": "演讲",
+    "stance": "未判定",
+    "summary": "分析SEP、点阵图与美联储政策沟通的关系。",
+    "evidence": "",
+    "rateBp": "未核实",
+    "confidence": "历史双人物看板记录，原文待复核",
+    "dateBasis": "美国当地日期"
+  },
+  {
     "date": "2026-10-01",
     "speaker": "Lorie Logan",
     "title": "Opening remarks for moderated conversation at Voices of the Eleventh District",
@@ -110,6 +194,34 @@
     "dateBasis": "美国当地日期",
     "reviewStatus": "原文访问失败",
     "reviewError": "Source domain not official"
+  },
+  {
+    "date": "2026-10-01",
+    "speaker": "Christopher Waller",
+    "title": "FRED与AI",
+    "url": "https://www.federalreserve.gov/newsevents/speech/waller20261001a.htm",
+    "source": "Federal Reserve Board",
+    "kind": "演讲",
+    "stance": "未判定",
+    "summary": "讨论FRED经济数据平台与生成式AI协作的机会及风险。",
+    "evidence": "",
+    "rateBp": "未核实",
+    "confidence": "历史双人物看板记录，原文待复核",
+    "dateBasis": "美国当地日期"
+  },
+  {
+    "date": "2026-09-29",
+    "speaker": "Christopher Waller",
+    "title": "AI智能体时代的支付",
+    "url": "https://www.federalreserve.gov/newsevents/speech/waller20260928a.htm",
+    "source": "Federal Reserve Board",
+    "kind": "演讲",
+    "stance": "未判定",
+    "summary": "探讨AI智能体对支付网络、自动交易及金融基础设施的潜在影响。",
+    "evidence": "",
+    "rateBp": "未核实",
+    "confidence": "历史双人物看板记录，原文待复核",
+    "dateBasis": "美国当地日期"
   },
   {
     "date": "2026-09-22",
@@ -158,5 +270,33 @@
     "dateBasis": "美国当地日期",
     "reviewStatus": "原文访问失败",
     "reviewError": "Source domain not official"
+  },
+  {
+    "date": "2026-09-16",
+    "speaker": "Kevin Warsh",
+    "title": "9月FOMC新闻发布会",
+    "url": "https://www.federalreserve.gov/mediacenter/files/FOMCpresconf20260916.pdf",
+    "source": "Federal Reserve Board",
+    "kind": "记者会",
+    "stance": "未判定",
+    "summary": "当次FOMC将利率区间上调25bp至3.75%—4.00%；回答市场关于加息决策、通胀和政策独立性的问题。",
+    "evidence": "",
+    "rateBp": "未核实",
+    "confidence": "历史双人物看板记录，原文待复核",
+    "dateBasis": "美国当地日期"
+  },
+  {
+    "date": "2026-09-03",
+    "speaker": "Christopher Waller",
+    "title": "经济前景与政策沟通",
+    "url": "https://www.federalreserve.gov/newsevents/speech/waller20260903a.htm",
+    "source": "Federal Reserve Board",
+    "kind": "媒体/官网",
+    "stance": "未判定",
+    "summary": "强调通胀虽高于目标，但近期数据显示反通胀迹象；政策需根据后续数据调整。",
+    "evidence": "",
+    "rateBp": "未核实",
+    "confidence": "历史双人物看板记录，原文待复核",
+    "dateBasis": "美国当地日期"
   }
 ]
