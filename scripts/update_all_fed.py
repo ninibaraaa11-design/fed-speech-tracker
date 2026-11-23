@@ -147,6 +147,7 @@ def enrich(row):
         row.setdefault("summary","已记录官方来源，正文或政策立场尚未核验")
         row.setdefault("rateBp","未核实")
         row["reviewStatus"]="原文访问失败"
+        row["lastFailureUTC"]=datetime.now(timezone.utc).strftime("%Y-%m-%d")
         row["reviewError"]=str(e)[:140]
     return row
 
@@ -169,7 +170,8 @@ def main():
     if not by_url and "Board error" in diagnostics:raise RuntimeError(str(diagnostics))
     # Bound external requests; older records are processed gradually, newest first.
     results=sorted(by_url.values(),key=lambda x:(x.get("date",""),x.get("speaker","")),reverse=True)
-    pending=[r for r in results if not r.get("reviewedAt") and r.get("reviewStatus")!="原文访问失败"]
+    # Retry source failures after 3 days, while allowing other records to progress.
+    pending=[r for r in results if not r.get("reviewedAt") and (r.get("reviewStatus")!="原文访问失败" or not r.get("lastFailureUTC") or (CUTOFF-date.fromisoformat(r["lastFailureUTC"])).days>=3)]
     for row in pending[:12]:enrich(row)
     OUT.parent.mkdir(exist_ok=True)
     new=json.dumps(results,ensure_ascii=False,indent=2)+"\n"
