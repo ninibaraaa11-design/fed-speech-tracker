@@ -38,7 +38,7 @@
       ['偏鹰',hawks,'hawk'],['偏鸽',doves,'dove'],
       ['混合',mixed,'mixed'],['无明确分类',observed.size-sample.length,'unknown']
     ].map(x=>'<span class="fed-pill '+x[2]+'">'+x[0]+' '+x[1]+'</span>').join('');
-    $('all-fed-scope').textContent='2026-09-01起｜收录 '+all.length+' 项官方来源记录；已覆盖 '+observed.size+'/'+people.length+' 位预设跟踪对象；近45天有明确规则初判 '+sample.length+' 人。其余不计入偏鹰偏鸽。';
+    $('all-fed-scope').textContent='2026-09-01起｜收录 '+all.length+' 项官方来源记录；已覆盖 '+observed.size+'/'+people.length+' 位预设跟踪对象；近45天有明确规则初判 '+sample.length+' 人。最近一条记录日期：'+(all[0]?.date||'暂无')+'。其余不计入偏鹰偏鸽。';
   }
   function render(){
     summarize();
@@ -67,7 +67,7 @@
     all.sort((a,b)=>b.date.localeCompare(a.date));
     const persons=[...new Set(people.concat(all.map(x=>x.speaker)))];
     $('all-fed-person').innerHTML='<option value="all">全部官员</option>'+persons.map(x=>'<option value="'+escape(x)+'">'+escape(x)+'</option>').join('');
-    $('all-fed-date').textContent='数据刷新：'+new Date().toLocaleString('zh-CN',{timeZone:'Asia/Shanghai',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit'})+'（北京时间，网页读取）';
+    $('all-fed-date').textContent='页面读取时间：'+new Date().toLocaleString('zh-CN',{timeZone:'Asia/Shanghai',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit'})+'（北京时间，网页读取）';
     document.querySelectorAll('[data-fed-mode]').forEach(btn=>btn.addEventListener('click',()=>{
       mode=btn.dataset.fedMode;
       document.querySelectorAll('[data-fed-mode]').forEach(b=>b.classList.toggle('selected',b===btn));
