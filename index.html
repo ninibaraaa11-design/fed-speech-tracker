@@ -15,4 +15,31 @@ function detail(x){const src=esc(x.url);$('detail').innerHTML=`<div class="muted
 变化：${x.delta} ${x.change}
 原文：${x.url}`;navigator.clipboard?.writeText(t).then(()=>{$('copy').textContent='已复制'}).catch(()=>window.prompt('复制研究卡片',t))}}
 document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{person=b.dataset.person;selected='';document.querySelectorAll('.tab').forEach(v=>v.classList.toggle('active',v===b));$('q').value='';for(let k of ['phase','type','topic','onlybp'])$(k).value='all';render()});for(const k of ['q','phase','type','topic','onlybp','order'])$(k).addEventListener(k==='q'?'input':'change',render);render();
+// Automatically discovered Fed speeches are provisional until their contents are verified.
+fetch('data/official_updates.json?v=' + Date.now(), {cache:'no-store'})
+  .then(response => { if(!response.ok) throw new Error('No incremental data'); return response.json(); })
+  .then(rows => {
+    if(!Array.isArray(rows)) return;
+    const known = new Set(DATA.map(x => x.url));
+    for(const x of rows) {
+      if(!x.url || known.has(x.url)) continue;
+      DATA.push({
+        uid: x.id || x.url, id: x.id || x.url, person: x.person,
+        date: x.date, type: x.type || '正式演讲',
+        title: x.title || '官网新增演讲（待核验）', venue: 'Federal Reserve',
+        english: x.title || '', summary: x.summary || '待核验',
+        delta: '待核验', change: '尚未完成与此前发言的逐篇比较',
+        topic: '货币政策', url: x.url, stance: '非直接利率表态',
+        full: '官方原文链接；中文分析待核验', official: true,
+        rateDirection: '未核实', rateBp: '未核实', rateMeeting: '未核实',
+        rateNote: '未核实原文；不可据此推断利率方向或基点',
+        rateProof: '仅确认官方目录链接；尚未逐篇核验',
+        phase: '2026任内', kind: '待核验', other: '',
+        details: [{tag:'资料状态',text:'已发现官方发言链接。AI观点、政策幅度和核心结论尚未验证，不构成研究结论。'}]
+      });
+      known.add(x.url);
+    }
+    render();
+  })
+  .catch(() => { /* Historical dashboard remains accessible offline. */ });
 </script></body></html>
