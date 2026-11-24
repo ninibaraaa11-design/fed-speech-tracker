@@ -327,15 +327,34 @@
     "url": "https://www.federalreserve.gov/newsevents/speech/bowman20261110a.htm",
     "source": "Federal Reserve Board",
     "kind": "正式演讲",
-    "stance": "未判定",
-    "summary": "已确认官网公开演讲；关键原句与鹰鸽判断待全文提取。",
+    "stance": "未明确表态",
+    "summary": "通胀；就业/劳动力；经济增长；生产率（自动主题索引，点击原文核对）",
     "evidence": "",
-    "rateBp": "未核实",
-    "confidence": "联储官网已确认，政策判读待核验",
+    "rateBp": "未明确提及",
+    "confidence": "官方网页正文+关键词规则初判；非人工政策评级",
     "dateBasis": "美国当地日期",
-    "reviewStatus": "原文访问失败",
+    "reviewStatus": "自动提取",
     "lastFailureUTC": "2026-11-24",
-    "reviewError": "Source domain not official"
+    "reviewError": "Source domain not official",
+    "points": [
+      {
+        "topic": "通胀",
+        "quote": "We are experiencing rapid technological change and ongoing geopolitical tensions, while inflation pressures have persisted for longer than I had hoped and have shown recent signs of broadening."
+      },
+      {
+        "topic": "就业/劳动力",
+        "quote": "It is a pleasure to join you today at the Council on Foreign Relations to discuss my outlook for the U.S. economy. 1 Economic growth has gained momentum this year, driven by robust investment demand and solid consumer spending, and the labor market now appears to have stabilized."
+      },
+      {
+        "topic": "经济增长",
+        "quote": "It is a pleasure to join you today at the Council on Foreign Relations to discuss my outlook for the U.S. economy. 1 Economic growth has gained momentum this year, driven by robust investment demand and solid consumer spending, and the labor market now appears to have stabilized."
+      },
+      {
+        "topic": "生产率",
+        "quote": "Despite these challenges, increased investment in and use of artificial intelligence (AI), or super intelligence, are boosting economic growth and productivity and American families appear to be resilient."
+      }
+    ],
+    "reviewedAt": "2026-11-24"
   },
   {
     "date": "2026-11-10",
@@ -351,7 +370,8 @@
     "rateBp": "未提出",
     "dateBasis": "美国当地日期",
     "reviewStatus": "原文访问失败",
-    "reviewError": "Source domain not official"
+    "reviewError": "article not found",
+    "lastFailureUTC": "2026-11-24"
   },
   {
     "date": "2026-11-10",
@@ -360,15 +380,38 @@
     "url": "https://www.federalreserve.gov/newsevents/speech/waller20261110a.htm",
     "source": "Federal Reserve Board",
     "kind": "演讲",
-    "stance": "未判定",
-    "summary": "讨论低招聘低裁员现象、就业市场活力与通胀；认为进一步货币紧缩应及早进行。",
-    "evidence": "",
-    "rateBp": "未核实",
-    "confidence": "历史双人物看板记录，原文待复核",
+    "stance": "混合（规则初判）",
+    "summary": "政策方向；通胀；就业/劳动力；生产率；人工智能（自动主题索引，点击原文核对）",
+    "evidence": "But inflation remains too high, so I will explain why I believe further tightening of monetary policy will be needed, sooner rather than later, to return inflation to a path that will reach 2 percent in the medium term. More educated workers experience less job churn in general and, during downturns, face lower rates of job separations.",
+    "rateBp": "未明确提及",
+    "confidence": "官方网页正文+关键词规则初判；非人工政策评级",
     "dateBasis": "美国当地日期",
-    "reviewStatus": "原文访问失败",
+    "reviewStatus": "自动提取",
     "lastFailureUTC": "2026-11-24",
-    "reviewError": "Source domain not official"
+    "reviewError": "Source domain not official",
+    "points": [
+      {
+        "topic": "政策方向",
+        "quote": "But inflation remains too high, so I will explain why I believe further tightening of monetary policy will be needed, sooner rather than later, to return inflation to a path that will reach 2 percent in the medium term. More educated workers experience less job churn in general and, during downturns, face lower rates of job separations."
+      },
+      {
+        "topic": "通胀",
+        "quote": "But inflation remains too high, so I will explain why I believe further tightening of monetary policy will be needed, sooner rather than later, to return inflation to a path that will reach 2 percent in the medium term."
+      },
+      {
+        "topic": "就业/劳动力",
+        "quote": "The U.S. economy is growing strongly, with a labor market that has brought employment close to its long-term rate."
+      },
+      {
+        "topic": "生产率",
+        "quote": "I am concerned that the low hire, low fire equilibrium in the labor market means it has lost some of its dynamism, which is important for productivity growth and real wages."
+      },
+      {
+        "topic": "人工智能",
+        "quote": "Consumption growth was helped by a booming stock market, and investment by businesses continued to surge, especially in high-tech equipment associated with the artificial intelligence (AI) buildout."
+      }
+    ],
+    "reviewedAt": "2026-11-24"
   },
   {
     "date": "2026-11-06",
@@ -384,7 +427,8 @@
     "rateBp": "未提出",
     "dateBasis": "美国当地日期",
     "reviewStatus": "原文访问失败",
-    "reviewError": "Source domain not official"
+    "reviewError": "The read operation timed out",
+    "lastFailureUTC": "2026-11-24"
   },
   {
     "date": "2026-10-30",
@@ -400,7 +444,8 @@
     "rateBp": "未提出",
     "dateBasis": "美国当地日期",
     "reviewStatus": "原文访问失败",
-    "reviewError": "Source domain not official"
+    "reviewError": "article not found",
+    "lastFailureUTC": "2026-11-24"
   },
   {
     "date": "2026-10-28",
@@ -415,7 +460,7 @@
     "rateBp": "未核实",
     "confidence": "历史双人物看板记录，原文待复核",
     "dateBasis": "美国当地日期",
-    "reviewStatus": "原文访问失败",
+    "reviewStatus": "PDF全文提取待支持",
     "lastFailureUTC": "2026-11-24",
     "reviewError": "Source domain not official"
   },
@@ -425,7 +470,24 @@
     "title": "Supervisory Modernization After Silicon Valley Bank",
     "url": "https://www.federalreserve.gov/newsevents/speech/bowman20261014a.htm",
     "source": "Federal Reserve Board",
-    "kind": "正式演讲"
+    "kind": "正式演讲",
+    "stance": "未明确表态",
+    "evidence": "",
+    "points": [
+      {
+        "topic": "经济增长",
+        "quote": "The 2018 Economic Growth, Regulatory Relief, and Consumer Protection Act."
+      },
+      {
+        "topic": "金融稳定",
+        "quote": "And, third, I will describe how modernization can improve the work of supervision around the world, including under the direction of standard-setting bodies like the Basel Committee on Banking Supervision (BCBS) and the Financial Stability Board (FSB)."
+      }
+    ],
+    "summary": "经济增长；金融稳定（自动主题索引，点击原文核对）",
+    "rateBp": "未明确提及",
+    "confidence": "官方网页正文+关键词规则初判；非人工政策评级",
+    "reviewStatus": "自动提取",
+    "reviewedAt": "2026-11-24"
   },
   {
     "date": "2026-10-13",
@@ -433,7 +495,20 @@
     "title": "Perspectives on the Economy and the Banking Landscape",
     "url": "https://www.bostonfed.org/news-and-events/speeches/2026/perspectives-economy-banking-landscape.aspx",
     "source": "Boston Fed",
-    "kind": "官方演讲页面"
+    "kind": "官方演讲页面",
+    "stance": "未明确表态",
+    "evidence": "",
+    "points": [
+      {
+        "topic": "通胀",
+        "quote": "Collins highlighted the economy’s resilience, the risks of persistently elevated inflation, and the recent Federal Open Market Committee decision to raise the federal funds rate."
+      }
+    ],
+    "summary": "通胀（自动主题索引，点击原文核对）",
+    "rateBp": "未明确提及",
+    "confidence": "官方网页正文+关键词规则初判；非人工政策评级",
+    "reviewStatus": "自动提取",
+    "reviewedAt": "2026-11-24"
   },
   {
     "date": "2026-10-12",
@@ -442,14 +517,33 @@
     "url": "https://www.clevelandfed.org/collections/speeches/sp-20261012-trimming-the-sails-communicating-my-reaction-function",
     "source": "Cleveland Fed",
     "kind": "正式演讲",
-    "stance": "未判定",
-    "summary": "已核对官方演讲/活动页面；政策倾向及核心原句等待逐篇提取。",
-    "evidence": "",
-    "confidence": "仅活动链接核实",
-    "rateBp": "未提出",
+    "stance": "偏鹰（规则初判）",
+    "summary": "通胀；就业/劳动力；利率；支付（自动主题索引，点击原文核对）",
+    "evidence": "For example, when inflation is too high, monetary policymakers tend to raise interest rates to bring inflation back down.",
+    "confidence": "官方网页正文+关键词规则初判；非人工政策评级",
+    "rateBp": "未明确提及",
     "dateBasis": "美国当地日期",
-    "reviewStatus": "原文访问失败",
-    "reviewError": "Source domain not official"
+    "reviewStatus": "自动提取",
+    "reviewError": "Source domain not official",
+    "points": [
+      {
+        "topic": "通胀",
+        "quote": "Based on current conditions, forecasts, and risks to the inflation side of our mandate, I believe a restrictive policy stance will be needed for us to reach our destination in a timely fashion."
+      },
+      {
+        "topic": "就业/劳动力",
+        "quote": "When the labor market is weak, policymakers tend to reduce interest rates to stimulate economic activity."
+      },
+      {
+        "topic": "利率",
+        "quote": "For example, when inflation is too high, monetary policymakers tend to raise interest rates to bring inflation back down."
+      },
+      {
+        "topic": "支付",
+        "quote": "First, there’s leading a Reserve Bank of more than a thousand people who are doing the work needed to help keep the economy running, like providing payments services to commercial banks, acting as fiscal agent to the US government, and ensuring fit currency is always available for the public."
+      }
+    ],
+    "reviewedAt": "2026-11-24"
   },
   {
     "date": "2026-10-09",
@@ -457,7 +551,15 @@
     "title": "Remarks at the Conference in Memory of John Leahy",
     "url": "https://www.bostonfed.org/news-and-events/speeches/2026/remarks-leahy-memorial-conference.aspx",
     "source": "Boston Fed",
-    "kind": "官方演讲页面"
+    "kind": "官方演讲页面",
+    "stance": "未明确表态",
+    "evidence": "",
+    "points": [],
+    "summary": "未在正文中提取到可明确分类的政策句子（自动主题索引，点击原文核对）",
+    "rateBp": "未明确提及",
+    "confidence": "官方网页正文+关键词规则初判；非人工政策评级",
+    "reviewStatus": "自动提取",
+    "reviewedAt": "2026-11-24"
   },
   {
     "date": "2026-10-08",
@@ -466,12 +568,36 @@
     "url": "https://www.federalreserve.gov/newsevents/speech/waller20261008a.htm",
     "source": "Federal Reserve Board",
     "kind": "演讲",
-    "stance": "未判定",
-    "summary": "分析SEP、点阵图与美联储政策沟通的关系。",
-    "evidence": "",
-    "rateBp": "未核实",
-    "confidence": "历史双人物看板记录，原文待复核",
-    "dateBasis": "美国当地日期"
+    "stance": "混合（规则初判）",
+    "summary": "政策方向；通胀；就业/劳动力；人工智能；利率（自动主题索引，点击原文核对）",
+    "evidence": "Overall, the new data reinforce my view that the labor market is stable and inflation is too high. When the FOMC cut rates from September through December 2025, we did so with inflation fairly close to our 2 percent target, after accounting for tariff effects that research found were passing through measures of inflation.",
+    "rateBp": "未明确提及",
+    "confidence": "官方网页正文+关键词规则初判；非人工政策评级",
+    "dateBasis": "美国当地日期",
+    "points": [
+      {
+        "topic": "政策方向",
+        "quote": "Overall, the new data reinforce my view that the labor market is stable and inflation is too high. When the FOMC cut rates from September through December 2025, we did so with inflation fairly close to our 2 percent target, after accounting for tariff effects that research found were passing through measures of inflation."
+      },
+      {
+        "topic": "通胀",
+        "quote": "When the FOMC cut rates from September through December 2025, we did so with inflation fairly close to our 2 percent target, after accounting for tariff effects that research found were passing through measures of inflation."
+      },
+      {
+        "topic": "就业/劳动力",
+        "quote": "At the same time, there was significant evidence of a weakening labor market, with an increase in unemployment over the first eight months of the year and very low job creation."
+      },
+      {
+        "topic": "人工智能",
+        "quote": "Second, evidence mounted that the artificial intelligence buildout was significantly driving up high-tech consumer prices, and projections for the size of that buildout ballooned."
+      },
+      {
+        "topic": "利率",
+        "quote": "This signaling helps to anchor the path of short-term interest rates but provides flexibility in adjusting rate hikes based on incoming data."
+      }
+    ],
+    "reviewStatus": "自动提取",
+    "reviewedAt": "2026-11-24"
   },
   {
     "date": "2026-10-06",
