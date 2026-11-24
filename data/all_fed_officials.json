@@ -1,20 +1,113 @@
 [
   {
     "date": "2026-11-20",
+    "speaker": "Lisa Cook",
+    "title": "The U.S. Economy in Global Context",
+    "url": "https://www.federalreserve.gov/newsevents/speech/cook20261120a.htm",
+    "source": "Federal Reserve Board",
+    "kind": "正式演讲",
+    "stance": "偏鹰（规则初判）",
+    "evidence": "In a late September speech, I expressed my support for the policy choice to raise rates because inflation had been too high for too long.",
+    "points": [
+      {
+        "topic": "政策方向",
+        "quote": "In a late September speech, I expressed my support for the policy choice to raise rates because inflation had been too high for too long."
+      },
+      {
+        "topic": "通胀",
+        "quote": "It piqued my interest in inflation targeting, a sound fiscal framework, and now, of course, how to think about the economic forces reshaping the global economy."
+      },
+      {
+        "topic": "就业/劳动力",
+        "quote": "This technology could bring a productivity boom unparalleled in generations. 2 At the same time, I worry deeply about our shared risks resulting from the technology, such as the specter of a painful labor market transition or cyber and financial-stability risks."
+      },
+      {
+        "topic": "经济增长",
+        "quote": "I was on a quest to determine whether economic growth in Latin America or in another region of the world would be the subject of my dissertation."
+      },
+      {
+        "topic": "生产率",
+        "quote": "This technology could bring a productivity boom unparalleled in generations. 2 At the same time, I worry deeply about our shared risks resulting from the technology, such as the specter of a painful labor market transition or cyber and financial-stability risks."
+      }
+    ],
+    "summary": "政策方向；通胀；就业/劳动力；经济增长；生产率（自动主题索引，点击原文核对）",
+    "rateBp": "未明确提及",
+    "confidence": "官方网页正文+关键词规则初判；非人工政策评级",
+    "reviewStatus": "自动提取",
+    "reviewedAt": "2026-11-24"
+  },
+  {
+    "date": "2026-11-20",
     "speaker": "Christopher Waller",
     "title": "College Fed Challenge开幕致辞",
     "url": "https://www.federalreserve.gov/newsevents/speech/waller20261120a.htm",
     "source": "Federal Reserve Board",
     "kind": "演讲",
-    "stance": "未判定",
-    "summary": "强调FOMC需依据证据形成决策，并向公众清晰解释政策判断与共识。",
+    "stance": "未明确表态",
+    "summary": "未在正文中提取到可明确分类的政策句子（自动主题索引，点击原文核对）",
     "evidence": "",
-    "rateBp": "未核实",
-    "confidence": "历史双人物看板记录，原文待复核",
+    "rateBp": "未明确提及",
+    "confidence": "官方网页正文+关键词规则初判；非人工政策评级",
     "dateBasis": "美国当地日期",
-    "reviewStatus": "原文访问失败",
+    "reviewStatus": "自动提取",
     "lastFailureUTC": "2026-11-24",
-    "reviewError": "Source domain not official"
+    "reviewError": "Source domain not official",
+    "points": [],
+    "reviewedAt": "2026-11-24"
+  },
+  {
+    "date": "2026-11-19",
+    "speaker": "Philip Jefferson",
+    "title": "Monetary Policy amid Frequent and Complex Shocks",
+    "url": "https://www.federalreserve.gov/newsevents/speech/jefferson20261119a.htm",
+    "source": "Federal Reserve Board",
+    "kind": "正式演讲",
+    "stance": "未明确表态",
+    "evidence": "",
+    "points": [
+      {
+        "topic": "通胀",
+        "quote": "When a shock moves the output gap and inflation in the same direction, our objectives are aligned, and policy actions taken to address one also support the other. 3 When a shock pushes them in opposite directions, there is a tradeoff."
+      },
+      {
+        "topic": "就业/劳动力",
+        "quote": "Labor market effects are relevant as well."
+      },
+      {
+        "topic": "生产率",
+        "quote": "Supply shocks change productive capacity—what economists call \"potential output\"—by affecting the available supply of labor and capital or the productivity of those inputs."
+      },
+      {
+        "topic": "人工智能",
+        "quote": "The rapid adoption of artificial intelligence (AI) represents such a shock."
+      }
+    ],
+    "summary": "通胀；就业/劳动力；生产率；人工智能（自动主题索引，点击原文核对）",
+    "rateBp": "未明确提及",
+    "confidence": "官方网页正文+关键词规则初判；非人工政策评级",
+    "reviewStatus": "自动提取",
+    "reviewedAt": "2026-11-24"
+  },
+  {
+    "date": "2026-11-18",
+    "speaker": "Michael Barr",
+    "title": "Investing in America’s Underserved Communities",
+    "url": "https://www.federalreserve.gov/newsevents/speech/barr20261118a.htm",
+    "source": "Federal Reserve Board",
+    "kind": "正式演讲",
+    "stance": "偏鹰（规则初判）",
+    "evidence": "But inflation is too high, making it hard for American families to make ends meet.",
+    "points": [
+      {
+        "topic": "通胀",
+        "quote": "But inflation is too high, making it hard for American families to make ends meet."
+      }
+    ],
+    "summary": "通胀（自动主题索引，点击原文核对）",
+    "rateBp": "未明确提及",
+    "confidence": "官方网页正文+关键词规则初判；非人工政策评级",
+    "reviewStatus": "自动提取",
+    "reviewedAt": "2026-11-24"
   },
   {
     "date": "2026-11-17",
@@ -23,15 +116,26 @@
     "url": "https://www.federalreserve.gov/newsevents/speech/waller20261117a.htm",
     "source": "Federal Reserve Board",
     "kind": "演讲",
-    "stance": "未判定",
-    "summary": "讨论代币化市场和支付基础设施的交互与金融结算安全。",
+    "stance": "未明确表态",
+    "summary": "金融稳定；支付（自动主题索引，点击原文核对）",
     "evidence": "",
-    "rateBp": "未核实",
-    "confidence": "历史双人物看板记录，原文待复核",
+    "rateBp": "未明确提及",
+    "confidence": "官方网页正文+关键词规则初判；非人工政策评级",
     "dateBasis": "美国当地日期",
-    "reviewStatus": "原文访问失败",
+    "reviewStatus": "自动提取",
     "lastFailureUTC": "2026-11-24",
-    "reviewError": "Source domain not official"
+    "reviewError": "Source domain not official",
+    "points": [
+      {
+        "topic": "金融稳定",
+        "quote": "The Federal Reserve can support these solutions by providing core payment and settlement infrastructure upon which the private sector can innovate, assessing potential risks to financial stability, and regularly engaging with the industry to better understand market challenges."
+      },
+      {
+        "topic": "支付",
+        "quote": "At “Navigating the Future of Banking and Payments,” The Clearing House Annual Conference 2026, New York, New York Thank you for inviting me to return and speak today. 1 I am delighted to be here during a transformational time in payments."
+      }
+    ],
+    "reviewedAt": "2026-11-24"
   },
   {
     "date": "2026-11-17",
@@ -40,14 +144,46 @@
     "url": "https://www.clevelandfed.org/collections/speeches/sp-20261117-lessons-from-a-burning-river",
     "source": "Cleveland Fed",
     "kind": "正式演讲",
-    "stance": "未判定",
-    "summary": "已核对官方演讲/活动页面；政策倾向及核心原句等待逐篇提取。",
+    "stance": "未明确表态",
+    "summary": "金融稳定（自动主题索引，点击原文核对）",
     "evidence": "",
-    "confidence": "仅活动链接核实",
-    "rateBp": "未提出",
+    "confidence": "官方网页正文+关键词规则初判；非人工政策评级",
+    "rateBp": "未明确提及",
     "dateBasis": "美国当地日期",
-    "reviewStatus": "原文访问失败",
-    "reviewError": "Source domain not official"
+    "reviewStatus": "自动提取",
+    "reviewError": "Source domain not official",
+    "points": [
+      {
+        "topic": "金融稳定",
+        "quote": "This is why Treasury market functioning is not a niche concern for me as a policymaker; it’s fundamental to monetary policy transmission and to financial stability."
+      }
+    ],
+    "reviewedAt": "2026-11-24"
+  },
+  {
+    "date": "2026-11-16",
+    "speaker": "Michael Barr",
+    "title": "Some Potential Financial Stability Implications of Artificial Intelligence",
+    "url": "https://www.federalreserve.gov/newsevents/speech/barr20261116a.htm",
+    "source": "Federal Reserve Board",
+    "kind": "正式演讲",
+    "stance": "未明确表态",
+    "evidence": "",
+    "points": [
+      {
+        "topic": "人工智能",
+        "quote": "Barr (2026), \" Will Artificial Intelligence Broadly Raise Living Standards or Drive Income and Wealth Inequality?"
+      },
+      {
+        "topic": "金融稳定",
+        "quote": "But AI can only succeed in strengthening our financial system in this way if it also supports financial stability, something that is indispensable to a healthy economy."
+      }
+    ],
+    "summary": "人工智能；金融稳定（自动主题索引，点击原文核对）",
+    "rateBp": "未明确提及",
+    "confidence": "官方网页正文+关键词规则初判；非人工政策评级",
+    "reviewStatus": "自动提取",
+    "reviewedAt": "2026-11-24"
   },
   {
     "date": "2026-11-16",
@@ -56,15 +192,83 @@
     "url": "https://www.federalreserve.gov/newsevents/speech/warsh20261116a.htm",
     "source": "Federal Reserve Board",
     "kind": "演讲",
-    "stance": "未判定",
-    "summary": "强调超级智能（SI）可能成为影响增长、生产率、工作岗位的重大结构变化，推动央行研究长期潜在供给。",
+    "stance": "未明确表态",
+    "summary": "就业/劳动力；经济增长；生产率；人工智能（自动主题索引，点击原文核对）",
     "evidence": "",
-    "rateBp": "未核实",
-    "confidence": "历史双人物看板记录，原文待复核",
+    "rateBp": "未明确提及",
+    "confidence": "官方网页正文+关键词规则初判；非人工政策评级",
     "dateBasis": "美国当地日期",
-    "reviewStatus": "原文访问失败",
+    "reviewStatus": "自动提取",
     "lastFailureUTC": "2026-11-24",
-    "reviewError": "Source domain not official"
+    "reviewError": "Source domain not official",
+    "points": [
+      {
+        "topic": "就业/劳动力",
+        "quote": "An SI-driven expansion could bring substantial labor market disruption as some jobs are displaced, rather than complemented, by technology."
+      },
+      {
+        "topic": "经济增长",
+        "quote": "As we wrote some years ago: \"If we meet the challenges before us, America has a bright future with strong, durable economic growth, abundant economic opportunities, vibrant and secure communities, and a healthy environment."
+      },
+      {
+        "topic": "生产率",
+        "quote": "At the Productivity and Jobs Task Force Conference, hosted by the Federal Reserve Board and the Federal Reserve Bank of San Francisco, San Francisco, California I'm grateful to Mary and her colleagues for helping to arrange this gathering."
+      },
+      {
+        "topic": "人工智能",
+        "quote": "Jones (2019), \" Artificial Intelligence and Economic Growth ,\" in Ajay Agrawal, Joshua Gans, and Avi Goldfarb, eds., The Economics of Artificial Intelligence: An Agenda (Chicago: University of Chicago Press, May), pp. 237–82."
+      }
+    ],
+    "reviewedAt": "2026-11-24"
+  },
+  {
+    "date": "2026-11-13",
+    "speaker": "Susan Collins",
+    "title": "Observations on Housing Market Challenges",
+    "url": "https://www.bostonfed.org/news-and-events/speeches/2026/observations-on-housing-market-challenges.aspx",
+    "source": "Boston Fed",
+    "kind": "官方演讲页面",
+    "stance": "未明确表态",
+    "evidence": "",
+    "points": [],
+    "summary": "未在正文中提取到可明确分类的政策句子（自动主题索引，点击原文核对）",
+    "rateBp": "未明确提及",
+    "confidence": "官方网页正文+关键词规则初判；非人工政策评级",
+    "reviewStatus": "自动提取",
+    "reviewedAt": "2026-11-24"
+  },
+  {
+    "date": "2026-11-13",
+    "speaker": "Philip Jefferson",
+    "title": "New Technology, Old Questions: Productivity Puzzles  and the Macroeconomy",
+    "url": "https://www.federalreserve.gov/newsevents/speech/jefferson20261113a.htm",
+    "source": "Federal Reserve Board",
+    "kind": "正式演讲",
+    "stance": "未明确表态",
+    "evidence": "",
+    "points": [
+      {
+        "topic": "通胀",
+        "quote": "Then, I will consider the implications of rapid technological change for the economy more broadly, including for aggregate supply and demand, for inflation, and for the labor market."
+      },
+      {
+        "topic": "就业/劳动力",
+        "quote": "Then, I will consider the implications of rapid technological change for the economy more broadly, including for aggregate supply and demand, for inflation, and for the labor market."
+      },
+      {
+        "topic": "生产率",
+        "quote": "Next, I will turn to what evidence we have regarding the adoption of artificial intelligence (AI). 2 I will consider how widely these tools are being used, in which sectors, and what recent research tells us about their potential effects on productivity."
+      },
+      {
+        "topic": "人工智能",
+        "quote": "Next, I will turn to what evidence we have regarding the adoption of artificial intelligence (AI). 2 I will consider how widely these tools are being used, in which sectors, and what recent research tells us about their potential effects on productivity."
+      }
+    ],
+    "summary": "通胀；就业/劳动力；生产率；人工智能（自动主题索引，点击原文核对）",
+    "rateBp": "未明确提及",
+    "confidence": "官方网页正文+关键词规则初判；非人工政策评级",
+    "reviewStatus": "自动提取",
+    "reviewedAt": "2026-11-24"
   },
   {
     "date": "2026-11-13",
@@ -80,7 +284,41 @@
     "rateBp": "未提出",
     "dateBasis": "美国当地日期",
     "reviewStatus": "原文访问失败",
-    "reviewError": "Source domain not official"
+    "reviewError": "article not found",
+    "lastFailureUTC": "2026-11-24"
+  },
+  {
+    "date": "2026-11-12",
+    "speaker": "Michael Barr",
+    "title": "American Inequality and the Future of AI",
+    "url": "https://www.federalreserve.gov/newsevents/speech/barr20261112a.htm",
+    "source": "Federal Reserve Board",
+    "kind": "正式演讲",
+    "stance": "未明确表态",
+    "evidence": "",
+    "points": [
+      {
+        "topic": "通胀",
+        "quote": "This was a period of slower economic growth and sometimes high inflation."
+      },
+      {
+        "topic": "就业/劳动力",
+        "quote": "AI could be what some researchers call capital-biased innovation, in which the returns go primarily to capital rather than to labor. 26 In previous remarks, I have explored scenarios for how AI could evolve as a technology and how it could affect labor markets."
+      },
+      {
+        "topic": "经济增长",
+        "quote": "This was a period of slower economic growth and sometimes high inflation."
+      },
+      {
+        "topic": "生产率",
+        "quote": "In this case, most businesses would have access to AI resources sufficient to support improved productivity and further innovation."
+      }
+    ],
+    "summary": "通胀；就业/劳动力；经济增长；生产率（自动主题索引，点击原文核对）",
+    "rateBp": "未明确提及",
+    "confidence": "官方网页正文+关键词规则初判；非人工政策评级",
+    "reviewStatus": "自动提取",
+    "reviewedAt": "2026-11-24"
   },
   {
     "date": "2026-11-10",
@@ -182,6 +420,22 @@
     "reviewError": "Source domain not official"
   },
   {
+    "date": "2026-10-14",
+    "speaker": "Michelle Bowman",
+    "title": "Supervisory Modernization After Silicon Valley Bank",
+    "url": "https://www.federalreserve.gov/newsevents/speech/bowman20261014a.htm",
+    "source": "Federal Reserve Board",
+    "kind": "正式演讲"
+  },
+  {
+    "date": "2026-10-13",
+    "speaker": "Susan Collins",
+    "title": "Perspectives on the Economy and the Banking Landscape",
+    "url": "https://www.bostonfed.org/news-and-events/speeches/2026/perspectives-economy-banking-landscape.aspx",
+    "source": "Boston Fed",
+    "kind": "官方演讲页面"
+  },
+  {
     "date": "2026-10-12",
     "speaker": "Beth Hammack",
     "title": "Trimming the Sails: Communicating My Reaction Function",
@@ -198,6 +452,14 @@
     "reviewError": "Source domain not official"
   },
   {
+    "date": "2026-10-09",
+    "speaker": "Susan Collins",
+    "title": "Remarks at the Conference in Memory of John Leahy",
+    "url": "https://www.bostonfed.org/news-and-events/speeches/2026/remarks-leahy-memorial-conference.aspx",
+    "source": "Boston Fed",
+    "kind": "官方演讲页面"
+  },
+  {
     "date": "2026-10-08",
     "speaker": "Christopher Waller",
     "title": "经济预测摘要的信号价值",
@@ -212,6 +474,14 @@
     "dateBasis": "美国当地日期"
   },
   {
+    "date": "2026-10-06",
+    "speaker": "Michelle Bowman",
+    "title": "Modernizing the Regulatory and Supervisory Landscape",
+    "url": "https://www.federalreserve.gov/newsevents/speech/bowman20261006a.htm",
+    "source": "Federal Reserve Board",
+    "kind": "正式演讲"
+  },
+  {
     "date": "2026-10-01",
     "speaker": "Philip Jefferson",
     "title": "The U.S. Economy and Monetary Policy",
@@ -224,6 +494,14 @@
     "rateBp": "未核实",
     "confidence": "联储官网已确认，政策判读待核验",
     "dateBasis": "美国当地日期"
+  },
+  {
+    "date": "2026-10-01",
+    "speaker": "Michelle Bowman",
+    "title": "Modernizing Financial Regulation: Initial Observations from eSLR",
+    "url": "https://www.federalreserve.gov/newsevents/speech/bowman20261001a.htm",
+    "source": "Federal Reserve Board",
+    "kind": "正式演讲"
   },
   {
     "date": "2026-10-01",
@@ -254,6 +532,22 @@
     "rateBp": "未核实",
     "confidence": "历史双人物看板记录，原文待复核",
     "dateBasis": "美国当地日期"
+  },
+  {
+    "date": "2026-09-30",
+    "speaker": "Lisa Cook",
+    "title": "The Dual Mandate in Rural America",
+    "url": "https://www.federalreserve.gov/newsevents/speech/cook20260930a.htm",
+    "source": "Federal Reserve Board",
+    "kind": "正式演讲"
+  },
+  {
+    "date": "2026-09-29",
+    "speaker": "Michelle Bowman",
+    "title": "Opening Remarks",
+    "url": "https://www.federalreserve.gov/newsevents/speech/bowman20260929a.htm",
+    "source": "Federal Reserve Board",
+    "kind": "正式演讲"
   },
   {
     "date": "2026-09-29",
@@ -298,6 +592,22 @@
     "dateBasis": "美国当地日期"
   },
   {
+    "date": "2026-09-23",
+    "speaker": "Michael Barr",
+    "title": "A Long-Term View on the Costs of Shelter",
+    "url": "https://www.federalreserve.gov/newsevents/speech/barr20260923a.htm",
+    "source": "Federal Reserve Board",
+    "kind": "正式演讲"
+  },
+  {
+    "date": "2026-09-22",
+    "speaker": "Philip Jefferson",
+    "title": "Discount Window Modernization and Treasury Market Functioning",
+    "url": "https://www.federalreserve.gov/newsevents/speech/jefferson20260922a.htm",
+    "source": "Federal Reserve Board",
+    "kind": "正式演讲"
+  },
+  {
     "date": "2026-09-22",
     "speaker": "John Williams",
     "title": "Do You Remember?",
@@ -328,6 +638,22 @@
     "dateBasis": "美国当地日期",
     "reviewStatus": "原文访问失败",
     "reviewError": "Source domain not official"
+  },
+  {
+    "date": "2026-09-18",
+    "speaker": "Michelle Bowman",
+    "title": "Initial Findings from Independent Review of Silicon Valley Bank",
+    "url": "https://www.federalreserve.gov/newsevents/speech/bowman20260918b.htm",
+    "source": "Federal Reserve Board",
+    "kind": "正式演讲"
+  },
+  {
+    "date": "2026-09-18",
+    "speaker": "Michelle Bowman",
+    "title": "The Final Chapter on Modernizing Bank Regulatory Stress Testing",
+    "url": "https://www.federalreserve.gov/newsevents/speech/bowman20260918a.htm",
+    "source": "Federal Reserve Board",
+    "kind": "正式演讲"
   },
   {
     "date": "2026-09-18",
