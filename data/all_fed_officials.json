@@ -774,12 +774,32 @@
     "url": "https://www.federalreserve.gov/newsevents/speech/barr20260929a.htm",
     "source": "Federal Reserve Board",
     "kind": "正式演讲",
-    "stance": "未判定",
-    "summary": "已确认官网公开演讲；关键原句与鹰鸽判断待全文提取。",
+    "stance": "未明确表态",
+    "summary": "通胀；就业/劳动力；经济增长；生产率（自动主题索引，点击原文核对）",
     "evidence": "",
-    "rateBp": "未核实",
-    "confidence": "联储官网已确认，政策判读待核验",
-    "dateBasis": "美国当地日期"
+    "rateBp": "未明确提及",
+    "confidence": "官方网页正文+关键词规则初判；非人工政策评级",
+    "dateBasis": "美国当地日期",
+    "points": [
+      {
+        "topic": "通胀",
+        "quote": "Inflation Inflation, which has been a problem for consumers and businesses, has run above the Federal Open Market Committee's (FOMC) 2 percent target for five and a half years."
+      },
+      {
+        "topic": "就业/劳动力",
+        "quote": "Labor Market While inflation is significantly above the FOMC's goal, strong business investment and resilient spending by consumers is supporting a solid labor market."
+      },
+      {
+        "topic": "经济增长",
+        "quote": "I've seen it in the economic growth in the Live6 community where I will visit later today."
+      },
+      {
+        "topic": "生产率",
+        "quote": "AI and the Implications for Labor Productivity A key question for monetary policy, both in the near term and for years to come, will be the effect of AI on the productive capacity of the economy and the structure of the labor market."
+      }
+    ],
+    "reviewStatus": "自动提取",
+    "reviewedAt": "2026-11-24"
   },
   {
     "date": "2026-09-29",
@@ -788,12 +808,24 @@
     "url": "https://www.federalreserve.gov/newsevents/speech/waller20260928a.htm",
     "source": "Federal Reserve Board",
     "kind": "演讲",
-    "stance": "未判定",
-    "summary": "探讨AI智能体对支付网络、自动交易及金融基础设施的潜在影响。",
+    "stance": "未明确表态",
+    "summary": "人工智能；支付（自动主题索引，点击原文核对）",
     "evidence": "",
-    "rateBp": "未核实",
-    "confidence": "历史双人物看板记录，原文待复核",
-    "dateBasis": "美国当地日期"
+    "rateBp": "未明确提及",
+    "confidence": "官方网页正文+关键词规则初判；非人工政策评级",
+    "dateBasis": "美国当地日期",
+    "points": [
+      {
+        "topic": "人工智能",
+        "quote": "See Iñaki Aldasoro, Sebastian Doerr, Leonardo Gambacorta, Sukhvir Notra, Tommaso Oliviero, and David Whyte (2025), \"Generative Artificial Intelligence and Cyber Security in Central Banking,\" Journal of Financial Regulation, vol. 11 (April), pp. 119–28."
+      },
+      {
+        "topic": "支付",
+        "quote": "As I have discussed before, within the financial sector, the payments industry has long been at the forefront of using AI to improve operations. 3 There is a rich history of deploying machine learning to combat payments fraud."
+      }
+    ],
+    "reviewStatus": "自动提取",
+    "reviewedAt": "2026-11-24"
   },
   {
     "date": "2026-09-28",
@@ -802,12 +834,32 @@
     "url": "https://www.federalreserve.gov/newsevents/speech/cook20260928a.htm",
     "source": "Federal Reserve Board",
     "kind": "正式演讲",
-    "stance": "未判定",
-    "summary": "已确认官网公开演讲；关键原句与鹰鸽判断待全文提取。",
+    "stance": "未明确表态",
+    "summary": "通胀；就业/劳动力；经济增长；生产率（自动主题索引，点击原文核对）",
     "evidence": "",
-    "rateBp": "未核实",
-    "confidence": "联储官网已确认，政策判读待核验",
-    "dateBasis": "美国当地日期"
+    "rateBp": "未明确提及",
+    "confidence": "官方网页正文+关键词规则初判；非人工政策评级",
+    "dateBasis": "美国当地日期",
+    "points": [
+      {
+        "topic": "通胀",
+        "quote": "AI and Inflation First, I would like to consider inflation implications in the short run and longer run."
+      },
+      {
+        "topic": "就业/劳动力",
+        "quote": "Ultimately, the timing of any disinflationary payoff will depend on how quickly and broadly businesses adopt AI tools, how changes in business practices translate to higher productivity, and how fast any productivity gains pass through to the labor market."
+      },
+      {
+        "topic": "经济增长",
+        "quote": "One of the most intriguing, impactful courses I took was on growth theory taught by Paul Romer who posited that investing in science and ideas could produce continuous, unbounded growth and later received the Nobel Prize for his seminal contributions advancing our thinking related to economic growth."
+      },
+      {
+        "topic": "生产率",
+        "quote": "A well-timed productivity boom could counter broadening price pressure, if it were to increase the supply capacity of the economy more than it increases demand."
+      }
+    ],
+    "reviewStatus": "自动提取",
+    "reviewedAt": "2026-11-24"
   },
   {
     "date": "2026-09-23",
@@ -815,7 +867,32 @@
     "title": "A Long-Term View on the Costs of Shelter",
     "url": "https://www.federalreserve.gov/newsevents/speech/barr20260923a.htm",
     "source": "Federal Reserve Board",
-    "kind": "正式演讲"
+    "kind": "正式演讲",
+    "stance": "未明确表态",
+    "evidence": "",
+    "points": [
+      {
+        "topic": "通胀",
+        "quote": "Economic growth is strong and the labor market is solid, but inflation is above our 2 percent target and not clearly trending toward target in a timely way."
+      },
+      {
+        "topic": "就业/劳动力",
+        "quote": "Economic growth is strong and the labor market is solid, but inflation is above our 2 percent target and not clearly trending toward target in a timely way."
+      },
+      {
+        "topic": "经济增长",
+        "quote": "Economic growth is strong and the labor market is solid, but inflation is above our 2 percent target and not clearly trending toward target in a timely way."
+      },
+      {
+        "topic": "生产率",
+        "quote": "The second factor—which is, in part, tied to the first—is the lower rate of productivity growth in the construction sector relative to other sectors of the economy."
+      }
+    ],
+    "summary": "通胀；就业/劳动力；经济增长；生产率（自动主题索引，点击原文核对）",
+    "rateBp": "未明确提及",
+    "confidence": "官方网页正文+关键词规则初判；非人工政策评级",
+    "reviewStatus": "自动提取",
+    "reviewedAt": "2026-11-24"
   },
   {
     "date": "2026-09-22",
@@ -823,7 +900,24 @@
     "title": "Discount Window Modernization and Treasury Market Functioning",
     "url": "https://www.federalreserve.gov/newsevents/speech/jefferson20260922a.htm",
     "source": "Federal Reserve Board",
-    "kind": "正式演讲"
+    "kind": "正式演讲",
+    "stance": "未明确表态",
+    "evidence": "",
+    "points": [
+      {
+        "topic": "金融稳定",
+        "quote": "The interaction between the Treasury market and the discount window that I have described underscores why maintaining a robust and effective discount window framework is not merely about banks, but critically important for financial stability more broadly."
+      },
+      {
+        "topic": "支付",
+        "quote": "In 2024, the System launched Discount Window Direct (DWD), a self-service online portal that allows banks to request loans, make payments, view loan and collateral information, and submit loan collateral files electronically."
+      }
+    ],
+    "summary": "金融稳定；支付（自动主题索引，点击原文核对）",
+    "rateBp": "未明确提及",
+    "confidence": "官方网页正文+关键词规则初判；非人工政策评级",
+    "reviewStatus": "自动提取",
+    "reviewedAt": "2026-11-24"
   },
   {
     "date": "2026-09-22",
@@ -839,7 +933,8 @@
     "rateBp": "未提出",
     "dateBasis": "美国当地日期",
     "reviewStatus": "原文访问失败",
-    "reviewError": "Source domain not official"
+    "reviewError": "article not found",
+    "lastFailureUTC": "2026-11-24"
   },
   {
     "date": "2026-09-21",
