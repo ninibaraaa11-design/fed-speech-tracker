@@ -92,13 +92,19 @@ def sentences(text):
     # Do not summarize with model; retain original exact sentences.
     return [x.strip() for x in re.split(r"(?<=[.!?])\s+(?=[A-Z“\"'])",text) if len(x.strip())>32 and len(x)<650]
 
-HAWK=(r"\braise (?:the )?(?:policy |interest )?rates?\b",r"\bhike (?:the )?rates?\b",
-      r"\bfurther (?:tightening|rate increases?)\b",r"\bneed to (?:increase|raise) (?:the )?(?:policy )?rates?\b",
-      r"\binflation (?:remains|is) (?:too|unacceptably) high\b")
-DOVE=(r"\bcut (?:the )?(?:policy |interest )?rates?\b",r"\blower (?:the )?(?:policy |interest )?rates?\b",
-      r"\brate cuts? (?:are|is) (?:appropriate|warranted|needed)\b",
-      r"\bneed to (?:reduce|lower) (?:the )?(?:policy )?rates?\b")
+# Deliberately conservative: general inflation observations or historical policy actions
+# do NOT constitute a current personal rate preference.
+HAWK=(
+  r"\b(?:i|we) (?:believe|think|favor|support|recommend|expect|would prefer)\b.{0,110}\b(?:raise|increase|hike)\b.{0,55}\b(?:policy |interest )?rates?\b",
+  r"\b(?:i|we) (?:believe|think|favor|support|recommend|expect)\b.{0,110}\b(?:further tightening|additional tightening)\b",
+  r"\b(?:further|additional) tightening of monetary policy (?:will|is) (?:be )?(?:needed|necessary|appropriate)\b",
+)
+DOVE=(
+  r"\b(?:i|we) (?:believe|think|favor|support|recommend|expect|would prefer)\b.{0,110}\b(?:cut|reduce|lower)\b.{0,55}\b(?:policy |interest )?rates?\b",
+  r"\b(?:rate cuts?|lower policy rates?) (?:are|is|will be) (?:needed|warranted|appropriate)\b",
+)
 NEG=r"\b(?:not|no|don't|doesn't|wouldn't|shouldn't|cannot|can't)\b"
+HISTORICAL=r"\b(?:last year|last month|last quarter|in (?:a )?(?:previous|past|earlier|late september)|in (?:20\d{2})|back in|when the fomc|historically|for example|as an example|i expressed|i had supported|previously)\b"
 TOPICS=[("通胀","inflation"),("就业/劳动力","labor market"),("经济增长","economic growth"),
         ("生产率","productivity"),("人工智能","artificial intelligence"),("利率","interest rates"),
         ("金融稳定","financial stability"),("支付","payments")]
@@ -121,7 +127,7 @@ def enrich(row):
             d=any(re.search(p,sentence,re.I) for p in DOVE)
             if not (h or d):continue
             # A negation or conditional clause needs human interpretation, never forced to binary stance.
-            if re.search(NEG,sentence,re.I) or re.search(r"\bif\b|\bunless\b|\bwould\b",sentence,re.I):continue
+            if re.search(NEG,sentence,re.I) or re.search(HISTORICAL,sentence,re.I) or re.search(r"\bif\b|\bunless\b|\bwould\b",sentence,re.I):continue
             matched.append((h,d,sentence))
         hawks=[s for h,d,s in matched if h and not d]
         doves=[s for h,d,s in matched if d and not h]
