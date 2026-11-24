@@ -11,7 +11,27 @@
     "evidence": "",
     "rateBp": "未核实",
     "confidence": "历史双人物看板记录，原文待复核",
-    "dateBasis": "美国当地日期"
+    "dateBasis": "美国当地日期",
+    "reviewStatus": "原文访问失败",
+    "lastFailureUTC": "2026-11-24",
+    "reviewError": "Source domain not official"
+  },
+  {
+    "date": "2026-11-17",
+    "speaker": "Christopher Waller",
+    "title": "支付与代币化市场的交汇",
+    "url": "https://www.federalreserve.gov/newsevents/speech/waller20261117a.htm",
+    "source": "Federal Reserve Board",
+    "kind": "演讲",
+    "stance": "未判定",
+    "summary": "讨论代币化市场和支付基础设施的交互与金融结算安全。",
+    "evidence": "",
+    "rateBp": "未核实",
+    "confidence": "历史双人物看板记录，原文待复核",
+    "dateBasis": "美国当地日期",
+    "reviewStatus": "原文访问失败",
+    "lastFailureUTC": "2026-11-24",
+    "reviewError": "Source domain not official"
   },
   {
     "date": "2026-11-17",
@@ -30,20 +50,6 @@
     "reviewError": "Source domain not official"
   },
   {
-    "date": "2026-11-17",
-    "speaker": "Christopher Waller",
-    "title": "支付与代币化市场的交汇",
-    "url": "https://www.federalreserve.gov/newsevents/speech/waller20261117a.htm",
-    "source": "Federal Reserve Board",
-    "kind": "演讲",
-    "stance": "未判定",
-    "summary": "讨论代币化市场和支付基础设施的交互与金融结算安全。",
-    "evidence": "",
-    "rateBp": "未核实",
-    "confidence": "历史双人物看板记录，原文待复核",
-    "dateBasis": "美国当地日期"
-  },
-  {
     "date": "2026-11-16",
     "speaker": "Kevin Warsh",
     "title": "生产率与就业工作组开幕讲话",
@@ -55,7 +61,10 @@
     "evidence": "",
     "rateBp": "未核实",
     "confidence": "历史双人物看板记录，原文待复核",
-    "dateBasis": "美国当地日期"
+    "dateBasis": "美国当地日期",
+    "reviewStatus": "原文访问失败",
+    "lastFailureUTC": "2026-11-24",
+    "reviewError": "Source domain not official"
   },
   {
     "date": "2026-11-13",
@@ -71,6 +80,23 @@
     "rateBp": "未提出",
     "dateBasis": "美国当地日期",
     "reviewStatus": "原文访问失败",
+    "reviewError": "Source domain not official"
+  },
+  {
+    "date": "2026-11-10",
+    "speaker": "Michelle Bowman",
+    "title": "The U.S. Economy and Considerations for Monetary Policy",
+    "url": "https://www.federalreserve.gov/newsevents/speech/bowman20261110a.htm",
+    "source": "Federal Reserve Board",
+    "kind": "正式演讲",
+    "stance": "未判定",
+    "summary": "已确认官网公开演讲；关键原句与鹰鸽判断待全文提取。",
+    "evidence": "",
+    "rateBp": "未核实",
+    "confidence": "联储官网已确认，政策判读待核验",
+    "dateBasis": "美国当地日期",
+    "reviewStatus": "原文访问失败",
+    "lastFailureUTC": "2026-11-24",
     "reviewError": "Source domain not official"
   },
   {
@@ -101,21 +127,10 @@
     "evidence": "",
     "rateBp": "未核实",
     "confidence": "历史双人物看板记录，原文待复核",
-    "dateBasis": "美国当地日期"
-  },
-  {
-    "date": "2026-11-10",
-    "speaker": "Michelle Bowman",
-    "title": "The U.S. Economy and Considerations for Monetary Policy",
-    "url": "https://www.federalreserve.gov/newsevents/speech/bowman20261110a.htm",
-    "source": "Federal Reserve Board",
-    "kind": "正式演讲",
-    "stance": "未判定",
-    "summary": "已确认官网公开演讲；关键原句与鹰鸽判断待全文提取。",
-    "evidence": "",
-    "rateBp": "未核实",
-    "confidence": "联储官网已确认，政策判读待核验",
-    "dateBasis": "美国当地日期"
+    "dateBasis": "美国当地日期",
+    "reviewStatus": "原文访问失败",
+    "lastFailureUTC": "2026-11-24",
+    "reviewError": "Source domain not official"
   },
   {
     "date": "2026-11-06",
@@ -161,7 +176,10 @@
     "evidence": "",
     "rateBp": "未核实",
     "confidence": "历史双人物看板记录，原文待复核",
-    "dateBasis": "美国当地日期"
+    "dateBasis": "美国当地日期",
+    "reviewStatus": "原文访问失败",
+    "lastFailureUTC": "2026-11-24",
+    "reviewError": "Source domain not official"
   },
   {
     "date": "2026-10-12",
@@ -195,6 +213,20 @@
   },
   {
     "date": "2026-10-01",
+    "speaker": "Philip Jefferson",
+    "title": "The U.S. Economy and Monetary Policy",
+    "url": "https://www.federalreserve.gov/newsevents/speech/jefferson20261001a.htm",
+    "source": "Federal Reserve Board",
+    "kind": "正式演讲",
+    "stance": "未判定",
+    "summary": "已确认官网公开演讲；关键原句与鹰鸽判断待全文提取。",
+    "evidence": "",
+    "rateBp": "未核实",
+    "confidence": "联储官网已确认，政策判读待核验",
+    "dateBasis": "美国当地日期"
+  },
+  {
+    "date": "2026-10-01",
     "speaker": "Lorie Logan",
     "title": "Opening remarks for moderated conversation at Voices of the Eleventh District",
     "url": "https://www.dallasfed.org/news/speeches/logan/2026/lkl261001",
@@ -224,10 +256,10 @@
     "dateBasis": "美国当地日期"
   },
   {
-    "date": "2026-10-01",
-    "speaker": "Philip Jefferson",
-    "title": "The U.S. Economy and Monetary Policy",
-    "url": "https://www.federalreserve.gov/newsevents/speech/jefferson20261001a.htm",
+    "date": "2026-09-29",
+    "speaker": "Michael Barr",
+    "title": "Economic Conditions and Monetary Policy",
+    "url": "https://www.federalreserve.gov/newsevents/speech/barr20260929a.htm",
     "source": "Federal Reserve Board",
     "kind": "正式演讲",
     "stance": "未判定",
@@ -249,20 +281,6 @@
     "evidence": "",
     "rateBp": "未核实",
     "confidence": "历史双人物看板记录，原文待复核",
-    "dateBasis": "美国当地日期"
-  },
-  {
-    "date": "2026-09-29",
-    "speaker": "Michael Barr",
-    "title": "Economic Conditions and Monetary Policy",
-    "url": "https://www.federalreserve.gov/newsevents/speech/barr20260929a.htm",
-    "source": "Federal Reserve Board",
-    "kind": "正式演讲",
-    "stance": "未判定",
-    "summary": "已确认官网公开演讲；关键原句与鹰鸽判断待全文提取。",
-    "evidence": "",
-    "rateBp": "未核实",
-    "confidence": "联储官网已确认，政策判读待核验",
     "dateBasis": "美国当地日期"
   },
   {
