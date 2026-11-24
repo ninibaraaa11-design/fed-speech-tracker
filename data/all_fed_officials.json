@@ -605,7 +605,28 @@
     "title": "Modernizing the Regulatory and Supervisory Landscape",
     "url": "https://www.federalreserve.gov/newsevents/speech/bowman20261006a.htm",
     "source": "Federal Reserve Board",
-    "kind": "正式演讲"
+    "kind": "正式演讲",
+    "stance": "未明确表态",
+    "evidence": "",
+    "points": [
+      {
+        "topic": "通胀",
+        "quote": "Later this year, the Board will consider updates to fixed-dollar asset thresholds in the Board's regulations to account for inflation and economic growth."
+      },
+      {
+        "topic": "经济增长",
+        "quote": "This includes updating asset-based thresholds to reflect changes over time and indexing them to economic growth to help ensure that they remain appropriately calibrated in the future."
+      },
+      {
+        "topic": "金融稳定",
+        "quote": "This emphasizes our mandate to preserve safety and soundness in the banking system and support U.S. financial stability."
+      }
+    ],
+    "summary": "通胀；经济增长；金融稳定（自动主题索引，点击原文核对）",
+    "rateBp": "未明确提及",
+    "confidence": "官方网页正文+关键词规则初判；非人工政策评级",
+    "reviewStatus": "自动提取",
+    "reviewedAt": "2026-11-24"
   },
   {
     "date": "2026-10-01",
@@ -614,12 +635,32 @@
     "url": "https://www.federalreserve.gov/newsevents/speech/jefferson20261001a.htm",
     "source": "Federal Reserve Board",
     "kind": "正式演讲",
-    "stance": "未判定",
-    "summary": "已确认官网公开演讲；关键原句与鹰鸽判断待全文提取。",
+    "stance": "未明确表态",
+    "summary": "通胀；就业/劳动力；经济增长；人工智能（自动主题索引，点击原文核对）",
     "evidence": "",
-    "rateBp": "未核实",
-    "confidence": "联储官网已确认，政策判读待核验",
-    "dateBasis": "美国当地日期"
+    "rateBp": "未明确提及",
+    "confidence": "官方网页正文+关键词规则初判；非人工政策评级",
+    "dateBasis": "美国当地日期",
+    "points": [
+      {
+        "topic": "通胀",
+        "quote": "However, inflation is too high and has exceeded the Federal Reserve's 2 percent target for more than five years."
+      },
+      {
+        "topic": "就业/劳动力",
+        "quote": "Labor Market In the labor market, a broad range of data indicates that conditions have stabilized."
+      },
+      {
+        "topic": "经济增长",
+        "quote": "Economic Activity Economic growth has maintained its momentum this year and has been expanding at a pace roughly in line with its potential rate despite being buffeted by several shocks."
+      },
+      {
+        "topic": "人工智能",
+        "quote": "The economy is being shaped by the rapid adoption of artificial intelligence (AI), shifting geopolitical dynamics, and underlying demographic trends."
+      }
+    ],
+    "reviewStatus": "自动提取",
+    "reviewedAt": "2026-11-24"
   },
   {
     "date": "2026-10-01",
@@ -627,7 +668,15 @@
     "title": "Modernizing Financial Regulation: Initial Observations from eSLR",
     "url": "https://www.federalreserve.gov/newsevents/speech/bowman20261001a.htm",
     "source": "Federal Reserve Board",
-    "kind": "正式演讲"
+    "kind": "正式演讲",
+    "stance": "未明确表态",
+    "evidence": "",
+    "points": [],
+    "summary": "未在正文中提取到可明确分类的政策句子（自动主题索引，点击原文核对）",
+    "rateBp": "未明确提及",
+    "confidence": "官方网页正文+关键词规则初判；非人工政策评级",
+    "reviewStatus": "自动提取",
+    "reviewedAt": "2026-11-24"
   },
   {
     "date": "2026-10-01",
@@ -643,7 +692,8 @@
     "rateBp": "未提出",
     "dateBasis": "美国当地日期",
     "reviewStatus": "原文访问失败",
-    "reviewError": "Source domain not official"
+    "reviewError": "article not found",
+    "lastFailureUTC": "2026-11-24"
   },
   {
     "date": "2026-10-01",
@@ -652,12 +702,20 @@
     "url": "https://www.federalreserve.gov/newsevents/speech/waller20261001a.htm",
     "source": "Federal Reserve Board",
     "kind": "演讲",
-    "stance": "未判定",
-    "summary": "讨论FRED经济数据平台与生成式AI协作的机会及风险。",
+    "stance": "未明确表态",
+    "summary": "人工智能（自动主题索引，点击原文核对）",
     "evidence": "",
-    "rateBp": "未核实",
-    "confidence": "历史双人物看板记录，原文待复核",
-    "dateBasis": "美国当地日期"
+    "rateBp": "未明确提及",
+    "confidence": "官方网页正文+关键词规则初判；非人工政策评级",
+    "dateBasis": "美国当地日期",
+    "points": [
+      {
+        "topic": "人工智能",
+        "quote": "The backdrop for our discussion is the technological earthquake of artificial intelligence (AI), which is bringing new opportunities and challenges for FRED and others in this audience."
+      }
+    ],
+    "reviewStatus": "自动提取",
+    "reviewedAt": "2026-11-24"
   },
   {
     "date": "2026-09-30",
@@ -665,7 +723,24 @@
     "title": "The Dual Mandate in Rural America",
     "url": "https://www.federalreserve.gov/newsevents/speech/cook20260930a.htm",
     "source": "Federal Reserve Board",
-    "kind": "正式演讲"
+    "kind": "正式演讲",
+    "stance": "未明确表态",
+    "evidence": "",
+    "points": [
+      {
+        "topic": "通胀",
+        "quote": "How are rural communities evolving economically, especially along the dimensions related to our dual mandate related to employment and inflation?"
+      },
+      {
+        "topic": "就业/劳动力",
+        "quote": "Nationwide, the labor market is largely stable."
+      }
+    ],
+    "summary": "通胀；就业/劳动力（自动主题索引，点击原文核对）",
+    "rateBp": "未明确提及",
+    "confidence": "官方网页正文+关键词规则初判；非人工政策评级",
+    "reviewStatus": "自动提取",
+    "reviewedAt": "2026-11-24"
   },
   {
     "date": "2026-09-29",
@@ -673,7 +748,24 @@
     "title": "Opening Remarks",
     "url": "https://www.federalreserve.gov/newsevents/speech/bowman20260929a.htm",
     "source": "Federal Reserve Board",
-    "kind": "正式演讲"
+    "kind": "正式演讲",
+    "stance": "未明确表态",
+    "evidence": "",
+    "points": [
+      {
+        "topic": "人工智能",
+        "quote": "See Financial Stability Board, Sound Practices for Responsible Adoption of Artificial Intelligence (AI) (PDF) (FSB, June 10, 2026)."
+      },
+      {
+        "topic": "金融稳定",
+        "quote": "Over the summer, under my leadership of the Standing Committee on Supervisory and Regulatory Cooperation, the Financial Stability Board published a report on Sound Practices for Responsible Adoption of AI . 2 This report offers several practices for financial institutions to consider in the adoption and use of this technology."
+      }
+    ],
+    "summary": "人工智能；金融稳定（自动主题索引，点击原文核对）",
+    "rateBp": "未明确提及",
+    "confidence": "官方网页正文+关键词规则初判；非人工政策评级",
+    "reviewStatus": "自动提取",
+    "reviewedAt": "2026-11-24"
   },
   {
     "date": "2026-09-29",
