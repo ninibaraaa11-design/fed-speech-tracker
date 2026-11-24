@@ -33,7 +33,7 @@ DOMAINS=("federalreserve.gov","newyorkfed.org","stlouisfed.org","dallasfed.org",
 MONTHS={x:i for i,x in enumerate(("January","February","March","April","May","June","July","August","September","October","November","December"),1)}
 
 def fetch(url):
-    if urllib.parse.urlparse(url).hostname not in DOMAINS:raise ValueError("Source domain not official")
+    if (urllib.parse.urlparse(url).hostname or "").removeprefix("www.") not in DOMAINS:raise ValueError("Source domain not official")
     req=urllib.request.Request(url,headers=HEADERS)
     with urllib.request.urlopen(req,timeout=22) as f:return BeautifulSoup(f.read(),"html.parser")
 
@@ -75,7 +75,7 @@ def discover_regional(bank,name,index):
     rows=[]
     for a in soup.select("a[href]"):
         url=urllib.parse.urljoin(index,a["href"]).split("?")[0]
-        domain=urllib.parse.urlparse(url).hostname or ""
+        domain=(urllib.parse.urlparse(url).hostname or "").removeprefix("www.")
         if domain not in DOMAINS or url==index:continue
         path=urllib.parse.urlparse(url).path.lower()
         if not any(k in path for k in ("speech","remark","president","address")):continue
@@ -104,7 +104,7 @@ TOPICS=[("通胀","inflation"),("就业/劳动力","labor market"),("经济增�
         ("金融稳定","financial stability"),("支付","payments")]
 
 def enrich(row):
-    if row.get("reviewedAt") or row.get("reviewStatus")=="原文访问失败":return row
+    if row.get("reviewedAt"):return row
     try:
         soup=fetch(row["url"])
         main=(soup.select_one("#article") or soup.select_one("main")
@@ -170,9 +170,12 @@ def main():
     if not by_url and "Board error" in diagnostics:raise RuntimeError(str(diagnostics))
     # Bound external requests; older records are processed gradually, newest first.
     results=sorted(by_url.values(),key=lambda x:(x.get("date",""),x.get("speaker","")),reverse=True)
-    # Retry source failures after 3 days, while allowing other records to progress.
-    pending=[r for r in results if not r.get("reviewedAt") and (r.get("reviewStatus")!="原文访问失败" or not r.get("lastFailureUTC") or (CUTOFF-date.fromisoformat(r["lastFailureUTC"])).days>=3)]
-    for row in pending[:12]:enrich(row)
+    # Retry prior failures: official-domain normalization was fixed.
+    pending=[r for r in results if not r.get("reviewedAt")]
+    for row in pending[:12]:
+        if row["url"].lower().endswith(".pdf"):
+            row["reviewStatus"]="PDF全文提取待支持";row["stance"]="未判定";continue
+        enrich(row)
     OUT.parent.mkdir(exist_ok=True)
     new=json.dumps(results,ensure_ascii=False,indent=2)+"\n"
     if not OUT.exists() or OUT.read_text(encoding="utf-8")!=new:OUT.write_text(new,encoding="utf-8")
