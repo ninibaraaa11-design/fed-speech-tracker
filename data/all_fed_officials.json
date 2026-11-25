@@ -285,7 +285,7 @@
     "dateBasis": "美国当地日期",
     "reviewStatus": "原文访问失败",
     "reviewError": "article not found",
-    "lastFailureUTC": "2026-11-24"
+    "lastFailureUTC": "2026-11-25"
   },
   {
     "date": "2026-11-12",
@@ -371,7 +371,7 @@
     "dateBasis": "美国当地日期",
     "reviewStatus": "原文访问失败",
     "reviewError": "article not found",
-    "lastFailureUTC": "2026-11-24"
+    "lastFailureUTC": "2026-11-25"
   },
   {
     "date": "2026-11-10",
@@ -428,7 +428,7 @@
     "dateBasis": "美国当地日期",
     "reviewStatus": "原文访问失败",
     "reviewError": "The read operation timed out",
-    "lastFailureUTC": "2026-11-24"
+    "lastFailureUTC": "2026-11-25"
   },
   {
     "date": "2026-10-30",
@@ -445,7 +445,7 @@
     "dateBasis": "美国当地日期",
     "reviewStatus": "原文访问失败",
     "reviewError": "article not found",
-    "lastFailureUTC": "2026-11-24"
+    "lastFailureUTC": "2026-11-25"
   },
   {
     "date": "2026-10-28",
@@ -693,7 +693,7 @@
     "dateBasis": "美国当地日期",
     "reviewStatus": "原文访问失败",
     "reviewError": "article not found",
-    "lastFailureUTC": "2026-11-24"
+    "lastFailureUTC": "2026-11-25"
   },
   {
     "date": "2026-10-01",
@@ -934,7 +934,7 @@
     "dateBasis": "美国当地日期",
     "reviewStatus": "原文访问失败",
     "reviewError": "article not found",
-    "lastFailureUTC": "2026-11-24"
+    "lastFailureUTC": "2026-11-25"
   },
   {
     "date": "2026-09-21",
@@ -950,7 +950,8 @@
     "rateBp": "未提出",
     "dateBasis": "美国当地日期",
     "reviewStatus": "原文访问失败",
-    "reviewError": "Source domain not official"
+    "reviewError": "article not found",
+    "lastFailureUTC": "2026-11-25"
   },
   {
     "date": "2026-09-18",
@@ -958,7 +959,20 @@
     "title": "Initial Findings from Independent Review of Silicon Valley Bank",
     "url": "https://www.federalreserve.gov/newsevents/speech/bowman20260918b.htm",
     "source": "Federal Reserve Board",
-    "kind": "正式演讲"
+    "kind": "正式演讲",
+    "stance": "未明确表态",
+    "evidence": "",
+    "points": [
+      {
+        "topic": "经济增长",
+        "quote": "Fourth , the delays in supervisory action were not caused by the regulatory tailoring mandate in the Economic Growth, Regulatory Relief, and Consumer Protection Act of 2018 or by any directive or suggestion from the former Vice Chair for Supervision to reduce the intensity of supervision."
+      }
+    ],
+    "summary": "经济增长（自动主题索引，点击原文核对）",
+    "rateBp": "未明确提及",
+    "confidence": "官方网页正文+关键词规则初判；非人工政策评级",
+    "reviewStatus": "自动提取",
+    "reviewedAt": "2026-11-25"
   },
   {
     "date": "2026-09-18",
@@ -966,7 +980,24 @@
     "title": "The Final Chapter on Modernizing Bank Regulatory Stress Testing",
     "url": "https://www.federalreserve.gov/newsevents/speech/bowman20260918a.htm",
     "source": "Federal Reserve Board",
-    "kind": "正式演讲"
+    "kind": "正式演讲",
+    "stance": "未明确表态",
+    "evidence": "",
+    "points": [
+      {
+        "topic": "利率",
+        "quote": "A plausible recession scenario, with rising interest rates and investment securities measured at fair value, would have shown the firm's capital falling below minimum required levels as early as the fourth quarter of 2021."
+      },
+      {
+        "topic": "金融稳定",
+        "quote": "This allows both firms and supervisors to understand scenarios that pose material threats to a firm's safety and soundness and to U.S. financial stability."
+      }
+    ],
+    "summary": "利率；金融稳定（自动主题索引，点击原文核对）",
+    "rateBp": "未明确提及",
+    "confidence": "官方网页正文+关键词规则初判；非人工政策评级",
+    "reviewStatus": "自动提取",
+    "reviewedAt": "2026-11-25"
   },
   {
     "date": "2026-09-18",
@@ -982,7 +1013,8 @@
     "rateBp": "未提出",
     "dateBasis": "美国当地日期",
     "reviewStatus": "原文访问失败",
-    "reviewError": "Source domain not official"
+    "reviewError": "The read operation timed out",
+    "lastFailureUTC": "2026-11-25"
   },
   {
     "date": "2026-09-16",
@@ -996,7 +1028,8 @@
     "evidence": "",
     "rateBp": "未核实",
     "confidence": "历史双人物看板记录，原文待复核",
-    "dateBasis": "美国当地日期"
+    "dateBasis": "美国当地日期",
+    "reviewStatus": "PDF全文提取待支持"
   },
   {
     "date": "2026-09-03",
