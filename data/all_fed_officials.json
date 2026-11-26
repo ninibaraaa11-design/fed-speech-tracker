@@ -1,5 +1,38 @@
 [
   {
+    "date": "2026-11-25",
+    "speaker": "Michelle Bowman",
+    "title": "Modernizing Banking Supervision: A Shared Agenda for the Americas",
+    "url": "https://www.federalreserve.gov/newsevents/speech/bowman20261125a.htm",
+    "source": "Federal Reserve Board",
+    "kind": "正式演讲",
+    "stance": "未明确表态",
+    "evidence": "",
+    "points": [
+      {
+        "topic": "经济增长",
+        "quote": "Artificial intelligence, digital assets, payment technology, and innovative business models create opportunities to improve efficiency, expand financial services, and support economic growth."
+      },
+      {
+        "topic": "人工智能",
+        "quote": "Artificial intelligence (or super intelligence), advanced analytics, and other supervisory technologies have the potential to improve the identification of emerging risks and our understanding of complex financial relationships."
+      },
+      {
+        "topic": "金融稳定",
+        "quote": "Good morning. 1 I would like to thank our hosts, the Banco Central do Brasil, the Association of Supervisors of Banks of the Americas (ASBA), the Basel Committee on Banking Supervision (BCBS), and the Financial Stability Institute, for bringing us together."
+      },
+      {
+        "topic": "支付",
+        "quote": "Our banking systems are linked through trade finance, investment, cross-border lending, payments, and remittances."
+      }
+    ],
+    "summary": "经济增长；人工智能；金融稳定；支付（自动主题索引，点击原文核对）",
+    "rateBp": "未明确提及",
+    "confidence": "官方网页正文+关键词规则初判；非人工政策评级",
+    "reviewStatus": "自动提取",
+    "reviewedAt": "2026-11-26"
+  },
+  {
     "date": "2026-11-20",
     "speaker": "Lisa Cook",
     "title": "The U.S. Economy in Global Context",
@@ -285,7 +318,7 @@
     "dateBasis": "美国当地日期",
     "reviewStatus": "原文访问失败",
     "reviewError": "article not found",
-    "lastFailureUTC": "2026-11-25"
+    "lastFailureUTC": "2026-11-26"
   },
   {
     "date": "2026-11-12",
@@ -371,7 +404,7 @@
     "dateBasis": "美国当地日期",
     "reviewStatus": "原文访问失败",
     "reviewError": "article not found",
-    "lastFailureUTC": "2026-11-25"
+    "lastFailureUTC": "2026-11-26"
   },
   {
     "date": "2026-11-10",
@@ -428,7 +461,7 @@
     "dateBasis": "美国当地日期",
     "reviewStatus": "原文访问失败",
     "reviewError": "The read operation timed out",
-    "lastFailureUTC": "2026-11-25"
+    "lastFailureUTC": "2026-11-26"
   },
   {
     "date": "2026-10-30",
@@ -445,7 +478,7 @@
     "dateBasis": "美国当地日期",
     "reviewStatus": "原文访问失败",
     "reviewError": "article not found",
-    "lastFailureUTC": "2026-11-25"
+    "lastFailureUTC": "2026-11-26"
   },
   {
     "date": "2026-10-28",
@@ -693,7 +726,7 @@
     "dateBasis": "美国当地日期",
     "reviewStatus": "原文访问失败",
     "reviewError": "article not found",
-    "lastFailureUTC": "2026-11-25"
+    "lastFailureUTC": "2026-11-26"
   },
   {
     "date": "2026-10-01",
@@ -934,7 +967,7 @@
     "dateBasis": "美国当地日期",
     "reviewStatus": "原文访问失败",
     "reviewError": "article not found",
-    "lastFailureUTC": "2026-11-25"
+    "lastFailureUTC": "2026-11-26"
   },
   {
     "date": "2026-09-21",
@@ -951,7 +984,7 @@
     "dateBasis": "美国当地日期",
     "reviewStatus": "原文访问失败",
     "reviewError": "article not found",
-    "lastFailureUTC": "2026-11-25"
+    "lastFailureUTC": "2026-11-26"
   },
   {
     "date": "2026-09-18",
@@ -1014,7 +1047,7 @@
     "dateBasis": "美国当地日期",
     "reviewStatus": "原文访问失败",
     "reviewError": "The read operation timed out",
-    "lastFailureUTC": "2026-11-25"
+    "lastFailureUTC": "2026-11-26"
   },
   {
     "date": "2026-09-16",
@@ -1038,12 +1071,32 @@
     "url": "https://www.federalreserve.gov/newsevents/speech/waller20260903a.htm",
     "source": "Federal Reserve Board",
     "kind": "媒体/官网",
-    "stance": "未判定",
-    "summary": "强调通胀虽高于目标，但近期数据显示反通胀迹象；政策需根据后续数据调整。",
+    "stance": "未明确表态",
+    "summary": "通胀；就业/劳动力；生产率；人工智能（自动主题索引，点击原文核对）",
     "evidence": "",
-    "rateBp": "未核实",
-    "confidence": "历史双人物看板记录，原文待复核",
-    "dateBasis": "美国当地日期"
+    "rateBp": "未明确提及",
+    "confidence": "官方网页正文+关键词规则初判；非人工政策评级",
+    "dateBasis": "美国当地日期",
+    "points": [
+      {
+        "topic": "通胀",
+        "quote": "But they are an important backdrop for the part of the outlook that is my focus right now, inflation, and my judgment about how much the current stance of policy is working to return inflation to 2 percent."
+      },
+      {
+        "topic": "就业/劳动力",
+        "quote": "Turning to the labor market, it is also in satisfactory shape."
+      },
+      {
+        "topic": "生产率",
+        "quote": "But, in contrast to the period of high inflation after the pandemic, wage growth, once one accounts for productivity growth, is broadly consistent with an expectation that inflation is continuing to come down to 2 percent."
+      },
+      {
+        "topic": "人工智能",
+        "quote": "But there continues to be considerable uncertainty about how military conflicts, trade policy, and artificial intelligence (AI) will affect prices and economic activity."
+      }
+    ],
+    "reviewStatus": "自动提取",
+    "reviewedAt": "2026-11-26"
   },
   {
     "date": "2026-09-01",
