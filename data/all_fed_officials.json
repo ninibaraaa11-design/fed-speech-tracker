@@ -318,7 +318,7 @@
     "dateBasis": "美国当地日期",
     "reviewStatus": "原文访问失败",
     "reviewError": "article not found",
-    "lastFailureUTC": "2026-11-26"
+    "lastFailureUTC": "2026-11-27"
   },
   {
     "date": "2026-11-12",
@@ -404,7 +404,7 @@
     "dateBasis": "美国当地日期",
     "reviewStatus": "原文访问失败",
     "reviewError": "article not found",
-    "lastFailureUTC": "2026-11-26"
+    "lastFailureUTC": "2026-11-27"
   },
   {
     "date": "2026-11-10",
@@ -461,7 +461,7 @@
     "dateBasis": "美国当地日期",
     "reviewStatus": "原文访问失败",
     "reviewError": "The read operation timed out",
-    "lastFailureUTC": "2026-11-26"
+    "lastFailureUTC": "2026-11-27"
   },
   {
     "date": "2026-10-30",
@@ -478,7 +478,7 @@
     "dateBasis": "美国当地日期",
     "reviewStatus": "原文访问失败",
     "reviewError": "article not found",
-    "lastFailureUTC": "2026-11-26"
+    "lastFailureUTC": "2026-11-27"
   },
   {
     "date": "2026-10-28",
@@ -726,7 +726,7 @@
     "dateBasis": "美国当地日期",
     "reviewStatus": "原文访问失败",
     "reviewError": "article not found",
-    "lastFailureUTC": "2026-11-26"
+    "lastFailureUTC": "2026-11-27"
   },
   {
     "date": "2026-10-01",
@@ -967,7 +967,7 @@
     "dateBasis": "美国当地日期",
     "reviewStatus": "原文访问失败",
     "reviewError": "article not found",
-    "lastFailureUTC": "2026-11-26"
+    "lastFailureUTC": "2026-11-27"
   },
   {
     "date": "2026-09-21",
@@ -984,7 +984,7 @@
     "dateBasis": "美国当地日期",
     "reviewStatus": "原文访问失败",
     "reviewError": "article not found",
-    "lastFailureUTC": "2026-11-26"
+    "lastFailureUTC": "2026-11-27"
   },
   {
     "date": "2026-09-18",
@@ -1047,7 +1047,7 @@
     "dateBasis": "美国当地日期",
     "reviewStatus": "原文访问失败",
     "reviewError": "The read operation timed out",
-    "lastFailureUTC": "2026-11-26"
+    "lastFailureUTC": "2026-11-27"
   },
   {
     "date": "2026-09-16",
@@ -1105,11 +1105,27 @@
     "url": "https://www.federalreserve.gov/newsevents/speech/barr20260901a.htm",
     "source": "Federal Reserve Board",
     "kind": "正式演讲",
-    "stance": "未判定",
-    "summary": "已确认官网公开演讲；关键原句与鹰鸽判断待全文提取。",
+    "stance": "未明确表态",
+    "summary": "通胀；就业/劳动力；生产率（自动主题索引，点击原文核对）",
     "evidence": "",
-    "rateBp": "未核实",
-    "confidence": "联储官网已确认，政策判读待核验",
-    "dateBasis": "美国当地日期"
+    "rateBp": "未明确提及",
+    "confidence": "官方网页正文+关键词规则初判；非人工政策评级",
+    "dateBasis": "美国当地日期",
+    "points": [
+      {
+        "topic": "通胀",
+        "quote": "But inflation remains too high—and has been for over five years."
+      },
+      {
+        "topic": "就业/劳动力",
+        "quote": "Realizing full employment depends on a labor market in which everyone can participate productively, including those formerly incarcerated or otherwise with a record of navigating the legal system."
+      },
+      {
+        "topic": "生产率",
+        "quote": "Productivity and new business formation have been strong for a number of years."
+      }
+    ],
+    "reviewStatus": "自动提取",
+    "reviewedAt": "2026-11-27"
   }
 ]
